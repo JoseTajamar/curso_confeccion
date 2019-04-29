@@ -1,0 +1,12 @@
+.main_header {
+    background-color: rgb(255, 187, 0);
+    color: rgb(42, 106, 165);
+    padding: 1rem 0rem 2rem 0rem
+}
+
+.main_footer{
+    background-color: aqua;
+    color: rgb(0, 201, 33);
+    text-align: center;
+    padding: 1rem
+}
