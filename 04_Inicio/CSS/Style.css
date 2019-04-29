@@ -6,3 +6,23 @@ strong{
     font-weight: normal;
     /* display: block; */
 }
+
+ES UNA MALA PRACTICA USAR LOS ID EN CSS
+#P001  {color: rgb(0, 37, 250);
+}
+.destacado {
+    color: brown;
+}
+
+.centro {
+   text-align: center;
+}
+.Lola {
+    color: blue
+}
+.Lola {
+    text-align: center
+}
+pre{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
