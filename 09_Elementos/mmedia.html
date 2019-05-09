@@ -12,25 +12,15 @@
         <h1>Etiquetas de HTML</h1>
         <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
         <nav>
-                <ul>
-                    <li><a href="./index.html#section" rel="tag" >section</li>
+             <ul>
+                 <li><a href="./index.html#section" rel="tag" >section</li>
                     <li><a href="./index.html#Grouping" rel="tag" >Grouping</li>
                     <li><a href="#Text-Level">Tex-level</a></li>
                     <li><a href="/09_Elementos/mmedia.html">Multimedia</a></li>
                 </ul>
-             </nav> 
+            </nav> 
     </header>
-    <div>
-        <main>
-        <section id="section">   
-        </section> 
-          <aside>
-            <h2>Publicidad</h2>
-            <p>Aqui iria la publicidad</p>
-            </aside>    
-        </main>
-
-    </div>
+    
     <h2>Multimedia</h2>
     <footer class="main_footer">
 
@@ -49,8 +39,48 @@
                 <li>mp4</li>
                 <li>ogg</li>
                 <li>webm</li>
+                <li>Elementos de navegación gráfico</li>
             </ul>
-            <li>Elementos de navegacion grafico</li>
+            <section class="sección_imágenes">
+            <!-- TODO ESTO ES NUEVO -->
+                <h3>Imágenes</h3>               
+                    <img src="assets/thumbnail.png" alt="cocodrilo"> 
+                    <img src="assets/ardilla.gif" alt="Ardilla">   
+                    <img src="assets/3boats.webp" alt="barcas">  
+                    <div class="clearfix"></div>  <!-- SUPER IMPORTANTE -->
+                    <p>Uso de imágenes responsivas en html</p>
+                    <div>
+                      <!-- <img src="./assets/komodo.jpg" alt="Animal de commodo mostrando su pico"> -->  
+                    </div>
+             <!-- TODO ESTO ES NUEVO -->
+            </section>
+
+            <picture>
+                <source media="(min-width: 900px)" srcset="./assets/komodo.jpg">
+                <source media="(min-width: 700px)" srcset="./assets/komodo.jpg">
+                <source media="(min-width: 680px)" srcset="./assets/komodo.jpg">
+                <img src="./assets/komodo.500.jpg" alt="lagarto" style="width:auto;">   
+            </picture>
+                <div class="clearfix"></div>
+                <section>
+                    <h3>Videos y Audio</h3>
+                </section>
+                <section>
+                    <h3>Elementos gráficos de navegación</h3>
+                </section>
+                <section></section>
+        </header>
+                <div>
+                        <main>
+                        <section id="section">   
+                          <aside>
+                            <h2>Publicidad</h2>
+                            <p>Aquí iría la publicidad</p>
+                            </aside>
+                        </section>    
+                        </main>    
+                    </div>     
+
         </header>
 
     </section>

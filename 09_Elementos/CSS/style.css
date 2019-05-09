@@ -27,7 +27,26 @@ body {
 
 img {
     max-width: 100%;
+    display: inline-block;
 }
+
+.sección_imágenes img{
+    max-width: 25%;
+    display: block;
+    float: left;
+}
+
+.image_wrapper_50{
+    width: 50%;
+}
+.image_wrapper_25{
+    width: 25%;
+}
+.image_wrapper_75{
+    width: 75%;
+}
+
+
 h1 {
     font-size: 3rem;
     font-weight: normal;
@@ -69,4 +88,14 @@ ul{
     text-decoration: none;
     display: block;
     padding: 1rem;
+}
+
+
+.Alineación {
+    text-align:center;
+    text-align-last: center;
+}
+
+.clearfix {
+    clear: both;
 }
