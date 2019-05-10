@@ -26,6 +26,8 @@
 
     </footer>
     <section id="Media">
+        <main>
+            <section id="Media">
         <header>
             <p>Entre los elementos establecidos de multimedia blablabla</p>
             <li>Formato de Imagenes</li>
@@ -46,7 +48,9 @@
                 <h3>Imágenes</h3>               
                     <img src="assets/thumbnail.png" alt="cocodrilo"> 
                     <img src="assets/ardilla.gif" alt="Ardilla">   
-                    <img src="assets/3boats.webp" alt="barcas">  
+                    <img src="assets/3boats.webp" alt="barcas">
+                    <img src="./assets/005.gif" alt="Gift animado">
+                    <img src="assets/logo.svg" alt="Logotipo">  
                     <div class="clearfix"></div>  <!-- SUPER IMPORTANTE -->
                     <p>Uso de imágenes responsivas en html</p>
                     <div>
@@ -56,28 +60,59 @@
             </section>
 
             <picture>
-                <source media="(min-width: 900px)" srcset="./assets/komodo.jpg">
-                <source media="(min-width: 700px)" srcset="./assets/komodo.jpg">
-                <source media="(min-width: 680px)" srcset="./assets/komodo.jpg">
-                <img src="./assets/komodo.500.jpg" alt="lagarto" style="width:auto;">   
+                <source media="(min-width: 900px)" srcset="./assets/komodo.jpg" type="image/jpg">
+                <source media="(min-width: 700px)" srcset="./assets/komodo.jpg" type="image/jpg">
+                <source media="(min-width: 680px)" srcset="./assets/komodo.jpg" type="image/jpg">
+                <img src="./assets/komodo.500.jpg" alt="lagarto" style="width:auto;">
+                <p>Las etiqueta de pictures y los formatos de imagenes</p>   
             </picture>
+           <!--  NUEVO Y SI FUNCIONA -->
+            <picture>
+                <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
+                <img src="./assets/tropical-sunrise.jpg" alt="amanecer tropical">
+            </picture>
+            <picture>
+                <source srcset="assets/logo.svg" type="image/svgxml">
+                    <img src="./assets/logo.jpg" alt="">
+            </picture>
+            <p>Etiqueta Figure</p>
+            <figure>
+                <img src="assets/komodo.jpg" alt="">
+                <figcaption>Varano de komodo</figcaption>  
+            </figure>
+            <!-- NUEVO Y SI FUNCIONA -->
                 <div class="clearfix"></div>
                 <section>
-                    <h3>Videos y Audio</h3>
+                    <h3>Video y Audio</h3>
+                    <p>Es posible incluir un video desde una fuente externa</p>
+                <div class="embed-container">
+                    <iframe class="embed-container iframe" width="560" height="315" src="https://www.youtube.com/embed/3d_ACcf0rDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                    <p>Otra opción es reproducir videos desde nuestro servidor</p>
+                    <video controls>
+                        <source src="assets/Ghost_in_the_Shell_Opening.webm" type="">
+                        <source src="assets/Ghost_in_the_Shell_Opening.mp4" type="">
+                    </video>
                 </section>
                 <section>
                     <h3>Elementos gráficos de navegación</h3>
                 </section>
-                <section></section>
+                <aside>
+                    <h3>Elementos embebidos en multimedia</h3>
+                    <p>La etiqueta frame permite aceder a otra web desde la muestra</p>
+                    <iframe class="web_externa" src="https://doblaje.fandom.com/es/wiki/Categor%C3%ADa:Anime"></iframe>
+                </aside>
+            </section>   
         </header>
+        </main>
                 <div>
-                        <main>
-                        <section id="section">   
-                          <aside>
-                            <h2>Publicidad</h2>
-                            <p>Aquí iría la publicidad</p>
-                            </aside>
-                        </section>    
+                    <main>
+                    <section id="section">   
+                        <aside>
+                        <h2>Publicidad</h2>
+                        <p>Aquí iría la publicidad</p>
+                        </aside>
+                    </section>    
                         </main>    
                     </div>     
 

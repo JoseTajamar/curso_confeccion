@@ -4,7 +4,11 @@ body {
 .main_header {
     background-color: brown;
     color: antiquewhite;
-    padding: 1rem 0rem 2rem 0rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.33rem;
+    margin-top: -2rem;
+    font-weight: bold;
 }
 .main_header1 {
     font-size: 1,33rem;
@@ -15,7 +19,8 @@ body {
     background-color: brown;
     color: antiquewhite;
     text-align: center;
-    padding: 1rem;
+    padding: 0.02rem;
+    height: 7vh;
 }
 
 .content_wraper {
@@ -34,6 +39,7 @@ img {
     max-width: 25%;
     display: block;
     float: left;
+    background-color: aqua;
 }
 
 .image_wrapper_50{
@@ -98,4 +104,47 @@ ul{
 
 .clearfix {
     clear: both;
+}
+
+body{
+    margin: 0;
+    margin-left: 0.5cm;
+}
+.main_header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main_header nav{
+    margin-left: -1rem;
+    text-align: left;
+}
+.main_header nav li{
+    display: inline-block;
+}
+.main_header a{
+    color: indianred;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+.web_externa{
+    width: 100%;
+    height: 60vh;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+video {
+    max-width: 100%
 }
