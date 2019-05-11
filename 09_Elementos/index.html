@@ -13,10 +13,10 @@
         <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
         <nav class="Alineación">
                 <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#section">section</a></li>
-                    <li><a href="#Grouping">Grouping</li>
-                    <li><a href="#Text-Level">Tex-level</a></li>
+                    <li><a href="#Inicio" target="_blank" rel="tag">- Inicio -</a></li>
+                    <li><a href="#sections">- Sections -</a></li>
+                    <li><a href="#Grouping">- Grouping -</a></li>
+                    <li><a href="#Text-level">- Text-level -</a></li>
                     <li><a href="/09_Elementos/mmedia.html">Multimedia</a></li>
                     <li><a href="/01_Hola_Mundo/Index.html">Prueba</a> </li>
                 </ul>
@@ -25,42 +25,67 @@
     <div class="content_wraper">
         <main>
          <p>El estándar diferencia inicialmente tres tipos diferentes de etiquetas: Section, Grouping content y Text-level semanthics</p>
-        <section id="section">
+         <section id="section">
             <header id="header">
                 <h2 lang="en">Sections</h2>
+                <!--  se puede usar tmb <header>Sections</header>, hay que decidir o usamos h2 o header en todo el doc -->
             </header>
-            <p>Esto trata de elementos de seleccionado que son los que se refleja en el esquema (online), de la pagina</p>
-            <p>Inicialmente estos elementos incluían body y los encabezados (h1-h6)</p>
-            <p>En HTML% se añaden los nuevos elementos semánticos: section, header, footer, nav, aside.</p>
-            <h3>Section</h3>
-            <p>El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un <strong>esquema</strong> . Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta <span></span>  semántica.</p>
-            <p>Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes</p>
-
-        </section>
-        <section id="etiqueta_header">
-            <h3>Etiqueta header</h3>
-            <p>El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.</p>
-        </section>
-                <section id="nav">
-                    <h3>Etiqueta Nav</h3>
-                    <blockquote>
-                        <nav>El elemento de la sección de navegación.</nav>   
-                    </blockquote>
-                    <p>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).</p>
+            <p>Esto se trata de elementos seccionado, que son los que se reflejan en el <strong>esquema</strong> (outline) de la página</p>
+            <p>Inicialmente estos elementos incluian body y los encabezados (h1-h6)</p>
+            <p>En HTML5 se añaden los nuevos elementos semánticos: 
+                <!-- <ul> nunca va dentro de un párrafo. -->
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>footer</li>
+                    <li>section</li>
+                    <li>article</li>
+                    <li>aside</li>
+                </ul> 
+            <section id="etiqueta_section">
+                <h3>Etiqueta Section</h3>
+                <!-- Código de escape &lt; &gt; &copy; -->
+                <blockquote title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">
+                    <p>El elemento de HTML section (&lt;section&gt;) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un <strong>esquema</strong>. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas. Es, por lo tanto, una etiquéta semántica.</p>
+                    <p> Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</p>
+                    <footer>
+                        <!-- Es muy recomendable usar la etiqueta <cite> para poner la fuente, o el autor de un texto citado -->
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/section">MDN</a></cite>
+                    </footer>
+                </blockquote>
+            </section>
+            <section id="etiqueta_header">
+                <h3>Etiqueta Header</h3>
+                <blockquote title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">
+                El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
+                    <footer>
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">MDN</a></cite>
+                    </footer>
+                </blockquote>
+            </section>
+            <section id="etiqueta_footer">
+                <h3>Etiqueta footer</h3>
+                    <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" title="developer.mozilla.org" >El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+                    <footer>
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer>MDN</a> </cite>
+                    </footer>
+                    </blockquote> 
                 </section>
-                <section id="footer_footer">
-                        <h3>Etiqueta footer</h3>
-                        <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" title="developer.mozilla.org" >El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
-                         <footer>
-                                <cite>
-                                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer</a> 
-                                </cite>
-                            </footer>
-                        </blockquote> 
-                    </section>
+            <section id="etiqueta_nav">
+                <h3>Nav</h3>
+                <blockquote title="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">
+                <p>La MDN indica que esta etiqueta crea un menú de navegación (https://developer.mozilla.org).</p>
+                <p>El elemento HTML &lt;nav&gt; representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e índices.</p>
+                <footer>
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/nav">MDN</a></cite>
+                </footer>
+                </blockquote>
+                </section>
                     <section id="article">
                         <h3>Article</h3>
+                        <blockquote title="https://www.w3.org/TR/html52/sections.html#sections">
                         <p>El Elemento article de HTML (&lt;article&gt;) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido</p>
+                        </blockquote>
                     </section>
                         <section id="footer_footer">
                         <h3>Etiqueta header</h3>
@@ -74,11 +99,18 @@
                 </section>
                 <section id="aside">
                         <h3>Aside</h3>
-                        <p>El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+                        <blockquote>
+                            <p>El Elemento HTML Aside (&lt;aside&gt;) representa una sección de una página que consiste en contenido que está <em>tangencialmente relacionado</em> con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>     
+                        </blockquote>
                 </section>
-                <figcaption class="image_wrapper">Esquema de los elementos semanticos de html</figcaption>
+                <figure class="image_wrapper">
+                   <img src="https://almosthumor.files.wordpress.com/2011/09/html5demo1.jpg" alt="Esquema de los elementos semanticos de html"> 
+                
+                <figcaption >Esquema de los elementos semanticos de html
+                </figcaption>
+                </figure>
                 <div class="image_wrapper">
-                    <img src="https://almosthumor.files.wordpress.com/2011/09/html5demo1.jpg" alt="Esquema de los elementos semanticos de html">
+                    
                 </div>
                 <footer class="image_wrapper"> Tomado de <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">Code pen</a></footer>
                 <!-- ES OTRA OPCION -img src="assets/image.jpg" alt="Lol" -->
