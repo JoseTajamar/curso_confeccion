@@ -164,22 +164,54 @@
                 </ol>
                 <p><strong>Ejemplo de lista con definiciones largas</strong></p>
                 <dl>
-                    <dt>Bolígrafo bic</dt> <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, corrupti molestias atque ad cumque laudantium iusto vero illo at dignissimos dolor voluptatibus voluptas laboriosam quidem aperiam tenetur, sunt ut qui.</dd>
-                    <dt>Pilots</dt><dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet numquam rem temporibus veritatis necessitatibus praesentium iure impedit animi vitae ad quam iusto sed itaque totam, soluta ex. Accusantium, porro voluptatum?</dd>
+                    <dt>Bolígrafo bic</dt> <dd> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, corrupti molestias atque ad cumque laudantium iusto vero illo at dignissimos dolor voluptatibus voluptas laboriosam quidem aperiam tenetur, sunt ut qui.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus atque ratione, ut animi doloribus nam alias velit exercitationem quas labore tempora quia cumque assumenda corporis adipisci provident, quam eligendi.</p> </dd>
+                    <dt>Pilots</dt><dd> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet numquam rem temporibus veritatis necessitatibus praesentium iure impedit animi vitae ad quam iusto sed itaque totam, soluta ex. Accusantium, porro voluptatum?</p> </dd>
                 </dl>
 
-                <div class="clearfix"></div>
-                <p>Ejemplo de lista ordenada</p>
-                <ol>
-                    <li>Lunes</li>
-                    <li>Martes</li>
-                    <li>Miercoles</li>
-                    <li>Jueves</li>
-                    <li>Viernes</li>
-                    <li>Sabado</li>
-                    <li>Domingo</li>
+                <p>Hay atributos especificos en las listas {ol start =X}</p>
+                <ol start="5">
+                    <li>Esto me permite</li>
+                    <li>empezar</li>
+                    <li>la lista por</li>
+                    <li>el nº que quiera.</li>
                 </ol>
-                
+                <p>El {ol reversed} sirve para cambiar el numero de listas; o mejor dicho; para invertirla</p>
+                <ol reversed>
+                    <li>Jose2</li>
+                    <li>Jose3</li>
+                    <li>Jose4</li>
+                    <li>Jose5</li>
+                </ol>
+
+                <h4> <strong>Lista de definiciones</strong> </h4>
+                <p>Dentro de esta lista podemos tener distintos items <strong>dt</strong> y <strong>dd</strong> (por un lado definicion y por otro termino); personas y su puesto en la empresa</p>
+                <dl>
+                    <dt>Ul</dt><dd>desordenadas</dd>
+                    <dt>Ol</dt><dd>Ordenada</dd>
+                    <dt>Dl</dt><dd>Lista de definicion</dd>
+                </dl>
+                <section>
+                    <h3>Bloques neutros</h3>
+                    <p>La etiqueta div no tiene ningún valor semántico. Unida al uso de las clases CSS es el principal elemento de diseño en la web</p>
+                    <p>Sirven para los layouts, para la distribución de los bloques de la página web</p>
+                </section>
+                <section>
+                    <h3>Bloques nuevos en HTML5</h3>
+                    <ul>
+                        <li>Address</li>
+                        <li>Main</li>
+                        <li>Figure</li>
+                    </ul>
+                    <p>Segun aparece en la web, <q cite="HTML.COM">el elemento <strong>html address</strong> <a href="https://elpais.com/">aporta informacion del contacto,</a>normalmente puede ser colodado dentro del elemento footer de la section</q></p>
+                    <p>El elemento <strong>{HTML address}</strong> aporta información de contacto para su <strong>{article}</strong>  más cercano o ancestro <strong>{body}</strong> en el último caso lo aplica a todo el documento.</p>
+                    <blockquote>
+                        <p>El elemento HTML  <strong>&ltmain&gt</strong>  representa el contenido principal del  <strong>&ltbody&gt</strong> de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</p>
+                    </blockquote>
+
+                </section>
+
+  
             </section>
         <section>   
         </main>
