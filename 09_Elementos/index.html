@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio-Elementos de la web</title>
+    <!-- NUEVO DE FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- NUEVO DE FUENTES -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <header class="main_header">
-        <h1>Etiquetas de HTML</h1>
+        <h1>Etiquetas de HTML
+                <i class="fab fa-html5"></i>
+        </h1>
         <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
         <nav class="Alineación">
                 <ul>
-                    <li><a href="#Inicio" target="_blank" rel="tag">- Inicio -</a></li>
-                    <li><a href="#sections">Sections</a></li>
+                    <!-- <li><a href="#Inicio" target="_blank" rel="tag">Inicio</a></li> --> <!-- (El Target o el rel hacen que se habra en otra pestaña) -->
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Sections">Sections</a></li>
                     <li><a href="#Grouping">Grouping</a></li>
                     <li><a href="#Text-level">Text-level</a></li>
                     <li><a href="/09_Elementos/mmedia.html">Multimedia</a></li>
+                    <li><a href="./datos.html#Tablas">Tablas</a></li>
+                    <li><a href="./datos.html#Formularios">Formularios</a></li>
                     <li><a href="/01_Hola_Mundo/Index.html">Prueba</a> </li>
                 </ul>
              </nav> 
@@ -67,7 +76,7 @@
                 <h3>Etiqueta footer</h3>
                     <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer" title="developer.mozilla.org" >El Elemento HTML Footer (&lt;footer&gt;) representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección (p.e, su ancestro mas cercano article, aside, nav, section, blockquote, body, details, fieldset, figure, td). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
                     <footer>
-                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer>MDN</a> </cite>
+                        <cite><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/footer">https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/footer>MDN</a> </cite>
                     </footer>
                     </blockquote> 
                 </section>
@@ -92,7 +101,7 @@
                         <blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header" title="developer.mozilla.org">El elemento de HTML Header (&lt;header&gt;) representa un grupo de ayudas introductorias o de navegación . Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas.
                         <footer>
                             <cite>
-                                 <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header</a> 
+                                 <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/header</a> 
                             </cite>
                         </footer>
                         </blockquote>
@@ -108,6 +117,11 @@
                    <figcaption >Esquema de los elementos semanticos de html
                     </figcaption>
                 </figure>
+                <!-- NUEVO -->
+                <footer class="main_section_footer">
+                    <a href="#Inicio" rel="tag" title="Inicio"><i class="fas fa-home"></i></a>
+                </footer>
+                <!-- NUEVO -->
                 <div class="image_wrapper">    
                 </div>
                 <footer class="image_wrapper"> Tomado de <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/header">Code pen</a></footer>
@@ -209,7 +223,7 @@
                         <p>El elemento HTML  <strong>&ltmain&gt</strong>  representa el contenido principal del  <strong>&ltbody&gt</strong> de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</p>
                         <footer>
                             <cite>
-                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main</a>
+                                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/main">https://developer.mozilla.org/ es/docs/Web/HTML/Elemento/main</a>
                             </cite>
                         </footer>
                     </blockquote>
@@ -226,7 +240,7 @@
             </header>
 
     <div class="content_wrapper">
-        <p>El estandar de <abbr title="Hypertext markup language"> <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head"></a></abbr></p>
+        <p>El estándar de <abbr title="Hypertext markup language"> <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head"></a></abbr></p>
         <section id="section_element">
 
         </section>
@@ -237,11 +251,27 @@
             <p>Aqui iria la publicidad</p>
         </aside>
     </div>
+    <!-- ni puta idea de para que sirve esto -->
+ <!--    <iframe class="iframe_footer" src="" frameborder="0"></iframe> -->
 
     <footer class="main_footer">
+        
         <p>José Velarde - ©Lechero´´SA</p>
         <a href="mailto://ElLechero@hotmail.es">Enviar correo</a>
+        <address>
+            <p>By JoseKira666</p>
+            <a href="mailto://ElLechero@hotmail.es"></a> 
+        </address>
+        <small>Tajamar</small>
+        <aside>
+            <ul>
+                <li><a href="https://www.facebook.com/ssolochicas/"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://github.com/JoseTajamar"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://google.es"><i class="fab fa-google"></i></a></li>
+            </ul>    
+        </aside>
         <!-- <a>rel= "external"</a> -->
     </footer>
+    
 </body>
 </html>

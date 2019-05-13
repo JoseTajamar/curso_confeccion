@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multimedia-Elementos de la web</title>
+    <!-- NUEVO 13-5-19 -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- NUEVO 23-5-19 -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body class="body1">
     <header class="main_header">
-        <h1>Etiquetas de HTML</h1>
+        <h1>Etiquetas de HTML
+                <i class="fab fa-html5"></i>
+        </h1>
         <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
-        <nav>
+        <nav class="Alineación">
              <ul>
-                 <li><a href="./index.html#section" rel="tag" >section</li>
-                    <li><a href="./index.html#Grouping" rel="tag" >Grouping</li>
-                    <li><a href="#Text-Level">Tex-level</a></li>
-                    <li><a href="/09_Elementos/mmedia.html">Multimedia</a></li>
-                </ul>
-            </nav> 
+                <li><a href="./index.html#Inicio">Inicio</a></li>
+                <li><a href="./index.html#section">Sections</a></li>
+                <li><a href="./index.html#Grouping">Grouping</a></li>
+                <li><a href="./index.html##Text-level">Text-level</a></li>
+                <li><a href="/09_Elementos/mmedia.html">Multimedia</a></li>
+                <li><a href="./datos.html#Tablas">Tablas</a></li>
+                <li><a href="./datos.html#Formularios">Formularios</a></li>
+            </ul>
+        </nav> 
     </header>
     
     <h2>Multimedia</h2>
-    <footer class="main_footer">
-
-    </footer>
     <section id="Media">
         <main>
             <section id="Media">
         <header>
-            <p>Entre los elementos establecidos de multimedia blablabla</p>
-            <li>Formato de Imagenes</li>
+            <p>Entre los elementos establecidos de multimedia se encuentran:</p>
+            <li>Formato de Imágenes</li>
             <ul>
                 <li>jpg</li>
                 <li>gif</li>
@@ -41,8 +47,8 @@
                 <li>mp4</li>
                 <li>ogg</li>
                 <li>webm</li>
-                <li>Elementos de navegación gráfico</li>
             </ul>
+    <h2>Elementos de navegación gráfico</h2>
             <section class="sección_imágenes">
             <!-- TODO ESTO ES NUEVO -->
                 <h3>Imágenes</h3>               
@@ -54,6 +60,7 @@
                     <div class="clearfix"></div>  <!-- SUPER IMPORTANTE -->
                     <p>Uso de imágenes responsivas en html</p>
                     <div>
+
                       <!-- <img src="./assets/komodo.jpg" alt="Animal de commodo mostrando su pico"> -->  
                     </div>
              <!-- TODO ESTO ES NUEVO -->
@@ -86,21 +93,33 @@
                     <h3>Video y Audio</h3>
                     <p>Es posible incluir un video desde una fuente externa</p>
                 <div class="embed-container">
-                    <iframe class="embed-container iframe" width="560" height="315" src="https://www.youtube.com/embed/3d_ACcf0rDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iAzdElF3-Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                     <p>Otra opción es reproducir videos desde nuestro servidor</p>
-                    <video controls>
+                    <video controls poster="./assets/komodo.jpg">
+                        <!-- Poniendo poster, insectas como un poster al principio del video -->
                         <source src="assets/Ghost_in_the_Shell_Opening.webm" type="">
                         <source src="assets/Ghost_in_the_Shell_Opening.mp4" type="">
                     </video>
                 </section>
                 <section>
                     <h3>Elementos gráficos de navegación</h3>
+                    <p>En el HTML antiguo se usaba la etiqueta map para definir un hotspot</p>
+                    <p>En HTML se puede conseguir este efecto usando {svg}</p>
+                    <!-- NUEVO 13-7-19 -->
+                    <embed src="./assets/logo.svg" type="Image/svg+xml">
+                    <!-- NUEVO 13-7-19 -->
+                    <p>Tambien relacionado con la navegación gráfica estaria el uso de iconos en los Menús</p>
                 </section>
                 <aside>
                     <h3>Elementos embebidos en multimedia</h3>
                     <p>La etiqueta frame permite aceder a otra web desde la muestra</p>
                     <iframe class="web_externa" src="https://doblaje.fandom.com/es/wiki/Categor%C3%ADa:Anime"></iframe>
+                    <p>Otras formas de ofrecer contenido externo son object y embed</p>
+                    <object data="https://www.tajamar.es/" type="text/html"></object>
+                    <embed src="https://www.tajamar.es/" type="text/html">
+                    <iframe src="https://www.tajamar.es/" frameborder="0"></iframe>
+                    <!-- Los frameborder es css y no se debe usar en html, es una etiqueta deprecado (obsoleto) -->
                 </aside>
             </section>   
         </header>
@@ -119,6 +138,27 @@
         </header>
 
     </section>
-    
+    <footer class="main_footer">
+        
+            <p>José Velarde - ©Lechero´´SA</p>
+            <a href="mailto://ElLechero@hotmail.es">Enviar correo</a>
+            <address>
+                <a href="mailto://ElLechero@hotmail.es"></a> 
+            </address>
+            <small>Tajamar</small>
+            <aside>
+                <ul>
+                    <li><a href="https://www.facebook.com/ssolochicas/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/JoseTajamar"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://google.es"><i class="fab fa-google"></i></a></li>
+                </ul>    
+            </aside>
+            <!-- <a>rel= "external"</a> -->
+        </footer>
+ <!--    <footer class="main_footer">
+            <p>José Velarde - ©Lechero´´SA</p>
+            <a href="mailto://ElLechero@hotmail.es">Enviar correo</a>
+            <a>rel= "external"</a>
+    </footer> -->
 </body>
 </html>
