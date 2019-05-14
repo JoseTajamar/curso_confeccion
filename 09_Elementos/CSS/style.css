@@ -8,11 +8,11 @@ body {
 .verde {
     color: rgb(74, 235, 0);
 }
-.body1 {
+/* .body1 {
     margin: 0%;
     margin-left: 2%;
 
-}
+} */
 .main_header {
     /* NUEVO 13-5-19 */
     font-family: 'Comfortaa', cursive;
@@ -23,7 +23,7 @@ body {
     text-align: center;
     font-size: 1.33rem;
     margin-top: -2rem;
-    margin-left: -3rem;
+    margin-left: 0rem;
     font-weight: bold;
 }
 
@@ -209,6 +209,23 @@ footer li {
 }
 /* NUEVO */
 
-/* .sin-borde{
-    
-} */
+.main_table{
+    width: 100%;
+    text-align: center;
+
+}
+/* Filas pares */
+.main_table>tbody>tr:nth-of-type(even){
+    background-color: rgb(138, 228, 228);
+}
+/* Filas impares */
+.main_table>tbody>tr:nth-of-type(odd){
+    background-color: darkorange;
+}
+.main_table>tbody>tr{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.centrar{
+    text-align: center;
+}

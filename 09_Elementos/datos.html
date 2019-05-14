@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,7 +12,7 @@
     <!-- NUEVO 23-5-19 -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="body1">
+<body class="body">
     <header class="main_header">
         <h1>Etiquetas de HTML
                 <i class="fab fa-html5"></i>
@@ -30,95 +30,174 @@
             </ul>
         </nav> 
     </header>
-    <!-- NUEVO? -->
-    <div class="image_wrapper1">
+    <div class="content_wraper">
         <main>
             <section id="Tablas">
                 <header>
                  <h2>Tablas</h2> 
-                 <p>Ejemplo de uso de tablas en navegadores</p>   
+                 <p>Ejemplo de uso de tablas en navegadores</p>
+                    <table border="0" class="main_table">
+                        <tr>
+                            <th>Esto va vacio</th>
+                            <th scope="col">2017</th>
+                            <th scope="col">2018</th>
+                            <th scope="col">2019</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Google Chrome</th>
+                            <td></td>
+                            <td>61,55 %</td>
+                            <td class="centrar">
+                                <table>
+                                    <tr>C67 32,59%</tr>
+                                </table>
+                                <table>
+                                    <tr>C66 2,44%</tr>
+                                </table>
+                                <table>
+                                    <tr>C59 2,30%</tr>
+                                </table>
+                                <table>
+                                    <tr>C49 2,18%</tr>
+                                </table>
+                                <table>
+                                    <tr>C64 1,91%</tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Safari</th>
+                            <td></td>
+                            <td>15,13 %</td>
+                            <td>   
+                                <table>
+                                    <tr>SF10</tr>
+                                    <tr>1,74%</tr>
+                                </table>
+                                <table>
+                                    <tr>SF11</tr>
+                                    <tr>10,79%</tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">UC Browser</th>
+                            <td></td>
+                            <td>4,41 %</td>
+                            <td>6,16%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mozilla Firefox</th>
+                            <td></td>
+                            <td>5,02 %</td>
+                            <td>2,65%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Internet Explorer </th>
+                            <td></td>
+                            <td>2,88 %</td>
+                            <td>2,44%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Opera</th>
+                            <td></td>
+                            <td>3,16 %</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Otros</th>
+                            <td></td>
+                            <td>7,85 %</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <caption>Porcentaje del uso de navegacion web</caption>
+                    <p>Ejemplo de tabla asimetrica</p>
+                        <table class="main_table">
+                                <tr>
+                                  <th colspan="2" rowspan="2">Preferencia de viajes</th>
+                                  <th colspan="3">Destinos</th>
+                                </tr>
+                                <tr>
+                                  <th scope="col">Caribe</th>
+                                  <th scope="col">Europa</th>
+                                  <th scope="col">Oriente</th>
+                                </tr>
+                                <tr>
+                                  <td rowspan="3">Rangos de edad</td>
+                                  <td>Menores de 18</td>
+                                  <td>38%</td>
+                                  <td>25%</td>
+                                  <td>37%</td>
+                                </tr>
+                                <tr>
+                                  <td>Ente 18 y 30</td>
+                                  <td>32%</td>
+                                  <td>37%</td>
+                                  <td>31%</td>
+                                </tr>
+                                <tr>
+                                  <td>Mayores de 30</td>
+                                  <td>30%</td>
+                                  <td>38%</td>
+                                  <td>32%</td>
+                                </tr>
+                            </table>
+                     
                 </header> 
             </section>
             <section id="forms">
                 <header>
                     <h2>Formularios</h2>
-                    <table border="1">
-                        <tr>
-                            <td>Esto va vacio</td>
-                            <td>2017</td>
-                            <td>2018</td>
-                            <td>2019</td>
-                        </tr>
-                        <tr>
-                            <td>Google Chrome</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Safari</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>UC Browser</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Mozilla Firefox</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Internet Explorer </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Opera</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Otros</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
-                    <!-- 8 filas 4 columnas -->
+                    <p>Los formularios se incluyen dentro de la etiqueta form</p>
+                    <p>Y en ellos se utilizan los siguientes controles.</p>
+                    <ul>
+                        <li>imput - text</li>
+                        <li>text area</li>
+                        <li>checkbox</li>
+                        <li>radio butoms</li>
+                        <li>select / options</li>
+                        <li>botones</li>
+                    </ul>
+                    <p>La etiqueta form tiene dos atributos importantes:</p>
+                    <ul>
+                        <li>action</li>
+                        <li>method</li>
+                    </ul>
+                    <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                        <input type="text" name="userName" placeholder="Nombre y Apellidos">
+                        <input type="password" name="userPasword" placeholder="Introduce contraseña">
+                        <button type="submit">Enviar</button>
+                    </form>
 
-                     (61,55 %)
-                     (15,13 %)
-                     (4,41 %)
-                     (5,02 %)
-                    (2,88 %)
-                     (3,16 %)
-                     (7,85 %)
-
-                    1. Chrome 67 - 32,59%
-                    2. Safari 11 - 10,79%
-                    3. UC Browser 12 - 6,16%
-                    4. Firefox 61 - 2,65%
-                    5. IE 11 - 2,44%
-                    6. Chrome 66 - 2,44%
-                    7. Chrome 59 - 2,30%
-                    8. Chrome 49 - 2,18%
-                    9. Chrome 64 - 1,91%
-                    10. Safari 10 - 1,74%
                 </header>   
             </section>
-
-        </main>
-        <aside>
-                <h2>Publicidad</h2>
-                <p>Aqui iria la publicidad</p>
-            </aside>
-        
+        </main>  
     </div>
+
+    <div class="content_wraper">
+        <aside>
+            <h2>Publicidad</h2></aside>
+            <p>Aqui iria la publicidad</p>
+        </aside>
+    </div>
+    <footer class="main_footer">
+        
+            <p>José Velarde - ©Lechero´´SA</p>
+            <a href="mailto://ElLechero@hotmail.es">Enviar correo</a>
+            <address>
+                <p>By JoseKira666</p>
+                <a href="mailto://ElLechero@hotmail.es"></a> 
+            </address>
+            <small>Tajamar</small>
+            <aside>
+                <ul>
+                    <li><a href="https://www.facebook.com/ssolochicas/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/JoseTajamar"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://google.es"><i class="fab fa-google"></i></a></li>
+                </ul>    
+            </aside>
+        </footer>
+
+</body>   
+</html>
