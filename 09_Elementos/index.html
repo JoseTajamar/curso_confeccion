@@ -228,25 +228,112 @@
                         </footer>
                     </blockquote>
                     <p>El elemento <strong>Figure</strong> es un contenedor de imagenes del que hablaremos al referirnos a estas</p>
+                    
                     <ul>
-                        <li>Etiqueta hr</li>
+                        <li>Etiqueta hr:</li>
+                        <p>El elemento HTML <strong>&lthr&gt</strong>  representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). En versiones previas de HTML representaba una línea horizontal. Aún puede ser representada como una línea horizontal en los navegadores visuales, pero ahora es definida en términos semánticos y no tanto en términos representativos, por tanto para dibujar una línea horizontal se debería usar el CSS apropiado.</p>
+                        <li>Etiqueta br:</li>
+                        <p>La etiqueta br crea un salto de lineaEl elemento HTML line break <strong>&ltbr&gt</strong>  produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de las líneas es significante.  No utilices <strong>&ltbr&gt</strong>  para incrementar el espacio entre líneas de texto; para ello utiliza la propiedad margin de CSS o el elemento.</p>
                         
                     </ul>
                 </section>
+                
+                <section id="Text-level">
+                <header>
+                    <h2>Text-level</h2>
+                </header> 
+                <section>
+                    <h3>Hiperenlaces</h3>
+                    <p>La etiqueta {a} es un enlace hiperactivo</p>
+                    <li><a href="https://www.google.es/">Google</a></li>
+                    <li><a href="https://www.youtube.com/?gl=ES">Youtube</a></li>
+                    <p>En el <strong>href</strong> se coloca la URL, que puede ser de 4 tipos diferentes:</p>
+                    <li>Absolutas</li>
+                    <p>http://www.lo que quieras. com nos dirige de forma absoluta</p>
+                    <li>Relativas al origen</li>
+                    <li>Relativas al documento</li>
+                    <li>Internas</li>
+                </section>
+                <section>
+                    <h3>Elementos en linea neutro</h3>
+                    <p>La etiqueta &lt;span&gt; no tiene ningún valor semántico.</p>
+                    <p>Ejemplo del uso en una palabra:</p>
+                    <p>Quiero que la palabra <span class="verde">verde</span> salga de su color.</p>
+                </section>
+                <section>
+                    <h3>Elementos claramente semanticos</h3>
+                    <li>Strong</li>
+                    <li>em (emphasis)</li>
+                    <li>Sup y Sub</li>
+                    <li>Small</li>
+                    <dl>-strong:</dl>
+                    <p> Marca palabras <strong>clave</strong> o importantes.MUY IMPORTANTE PARA EL SEO Y NO SIGNIFICA NEGRITA, eso ya luego con css se modifica como queramos viene por defecto pero no es lo suyo. Puedo poner un css diplay none para meter strongs en contendores (span) al decir display none se oculta a usuario pero figura para el indexador y sale como strong si voy a teer una web muy grafica lo meto ahí</p>
+                    <dl>-em:</dl>
+                    <p>Sirve para crear <em>énfasis</em>  en alguna palabra</p>
+                    <dl>-Sup y Sub:</dl>
+                    <p>Tienen que ser de uso generalizado y reconocible. H<sub>2</sub>O y e= m * v<sup>2</sup></p>
+                    <dl>-small</dl>
+                    <p>La letra pequeña Se pone en el footer o en figcaption para letra pequeña de temas legales copy rights autor todo eso es <small>la tipica letra pequeña</small> </p>
+                </section>
+                <section>
+                    <h3>Elementos con valor semanticos nuevos</h3>
+                    <ul>
+                        <li>b (bold)</li>
+                        <p>fragmentos de texto que quiero o necesito que llaman la atencion sin concederles ninguna importancia extra (no es un strong) si queremos importacia strong</p>
+                        <li>i (italics)</li>
+                        <P>Indica <i>calidad diferente</i>  de texto incluyendo cambio de tono o estado de animo tipo enfasis pero no es lo mismo, tipo un refran el nombre de un barco lo que quiero en cursiva pero sin dar enfasis al leerlo </P>
+                        <li>u (underline)</li>
+                        <P> <u>UNDERLINE</u> sirve para subrayar frase nombres propios chinos, palabras mal escritas a drede. </P>
+                        <li>s (strike)</li>
+                        <P>Sireve para <s>TACHAR</s>  algo precios antiguos o info que quiero dejar pero ya no tiene valor actual para lo que quieras</P>
+                    </ul>
+                </section>
+                <section id="elementos_tipo_tecnico">
+                    <h3>Elementos de tipo tecnico</h3>
+                    <ul>
+                        <!-- El más importante es <abbr> -->
+                        <li>samp (sample)</li>
+                        <li>code (code): para poner trozos de código.</li>
+                        <li>kbd (keyboard): para indicar comandos de teclado</li>
+                        <li>var (variables)</li>
+                        <li>dfn (definition)</li>
+                        <li>abbr (abbr): Nos permite la presencia de abreviatura y acrónimos. <abbr title="Naciones Unidas"> <a href="https://www.un.org/es/">ONU</a></abbr></li>
+                        <!-- Mejoro el SEO, porque asi apareceré en las búsquedas de ONU y por Naciones Unidas; mejoro también la accesibilidad. --> 
+                    </ul>
+                <section id="referencias_citas">
+                    <h3>Uso de referencias y Citas</h3>
+                    <ul>
+                        <li>q (quote): cita. </li>
+                        <p><q>One punch man</q></p>+
+                        <li>cite (cite o referencia): referencia, autor. Su uso: A pie de una referencia, o cuando hago referencia a alguna obra sin poner la referencia el autor/origen (libros,películas, pintura etc.). </li>
+                        <p>La pelicula: <cite>El señor de los anillos</cite></p>
+                    </ul>
+                    </section>    
+                </section>
+                <section id="otras_etiquetas_semanticas_HTML5">
+                    <h3>Otras etiquetas semanticas de HTML5</h3>
+                    <ul>
+                        <li>Time</li>
+                        <p>Por ejemplo:<time datetime="2019-12-06">Dia de la Constitucion</time></p>
+                        <li>Mark</li>
+                        <p>Marcado <mark>interactivo</mark> sirve para recalcar aquellas cosas que tiene interes para la busqueda <!-- cuando buscon en google la info que aparece abajo la obtiene o de mi description en los meta o de las primeras lineas de la web y luego los marca como em mark para que salga cuando la busquedad...   --></p>
+                    </ul>
+                </section>
+                <section id="Edits">
+                    <h3>Edits</h3>
+                    <ul>
+                        <li>ins:referencias a cambios en la edición en la página web</li>
+                        <li>del:deleted</li>
+                    </ul>
+                    <p>Muestra el contenido que se ha insertado (Instead) en lugar de otro que se ha rechazado (delete) no lo borramos lo tachamos para que aparezca</p>
+                    <P><ins>+100</ins> <del>50</del> total 50 </P>
+                </section>
+                </section>
         </main>
         
-            <header>
-                <h2>Text-level</h2>
-            </header>
-
     <div class="content_wrapper">
-        <p>El estándar de <abbr title="Hypertext markup language"> <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head"></a></abbr></p>
-        <section id="section_element">
-
-        </section>
-        <section id="growping"></section>
-        <section id="text-level"></section>
-        <aside>
+<!--         <p>El estándar de <abbr title="Hypertext markup language"> <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/head"></a></abbr></p>
+        <aside> -->
             <h2>Publicidad</h2>
             <p>Aqui iria la publicidad</p>
         </aside>

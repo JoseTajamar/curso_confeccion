@@ -5,6 +5,9 @@ body {
     font-family: 'Playfair Display', serif;
     /* NUEVO 13-5-19 */
 }
+.verde {
+    color: rgb(74, 235, 0);
+}
 .body1 {
     margin: 0%;
     margin-left: 0.5cm;
