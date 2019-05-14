@@ -10,7 +10,7 @@ body {
 }
 .body1 {
     margin: 0%;
-    margin-left: 0.5cm;
+    margin-left: 2%;
 
 }
 .main_header {
@@ -23,6 +23,7 @@ body {
     text-align: center;
     font-size: 1.33rem;
     margin-top: -2rem;
+    margin-left: -3rem;
     font-weight: bold;
 }
 
@@ -207,3 +208,7 @@ footer li {
     color: brown;
 }
 /* NUEVO */
+
+.sin-borde{
+    
+}
