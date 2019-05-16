@@ -229,3 +229,36 @@ footer li {
 .centrar{
     text-align: center;
 }
+
+.form_control{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+
+    background-color: rgb(133, 190, 197)
+}
+.form_label {
+    display: block;
+    margin-top: 1rem;
+}
+fieldset {
+    margin-bottom: 1rem;
+    border-color: bisque;
+}
+.placeholder {
+    color: brown;
+    background-color: bisque;
+    font-family: 'Playfair Display', serif;
+}
+/* select:hover {
+    color: brown;
+} */
+.radio_wrapper {
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+}

@@ -146,7 +146,7 @@
                      
                 </header> 
             </section>
-            <section id="forms">
+            <section id="Formularios">
                 <header>
                     <h2>Formularios</h2>
                     <p>Los formularios se incluyen dentro de la etiqueta form</p>
@@ -164,13 +164,103 @@
                         <li>action</li>
                         <li>method</li>
                     </ul>
-                    <form action="https://jsonplaceholder.typicode.com/users" method="POST">
+                    <h3>Formularios mínimos</h3>
+                    <p>Ejemplo de los elementos mínimos de un formulario y uso de los distintos metodos: GET y POST</p>
+                    <h4>Uso de GET</h4>
+                    <form action="https://jsonplaceholder.typicode.com/users" method="GET"
+                    name="basic-get" method="GET">
                         <input type="text" name="userName" placeholder="Nombre y Apellidos">
                         <input type="password" name="userPasword" placeholder="Introduce contraseña">
                         <button type="submit">Enviar</button>
                     </form>
+                    <h4>Uso de POST</h4>
+                    <p>Se usa el POST para ser las palabras sensibles; ej: contraseñas, pines del banco, etc; sean mas seguros con la protección de datos</p>
+                    <form action="https://jsonplaceholder.typicode.com/users" method="POST" 
+                    name="basic-post" method="POST">
+                        <input type="text" name="userName" placeholder="Nombre y Apellidos">
+                        <input type="password" name="userPasword" placeholder="Introduce contraseña">
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <h3>Formulario mas completo</h3>
+                    <p>Usamos en un mismo formulario los principales controles</p>
+                    <form action="https://jsonplaceholder.typicode.com/users" method="POST" 
+                    name="complete-post" method="POST">
+                        <fieldset id="datos_personales">
+                            <legend>Datos personales</legend>
+                            <label class="form_label" for="userName">Nombre de usuario</label>
+                            <input class="form_control" type="text" id="userName" name="userName" placeholder="Dime tu nombre y apellidos" required>
 
-                </header>   
+                            <label class="form_label" for="userPassword">Contraseña</label> 
+                            <input class="form_control" type="password" id="userPassword" name="userPassword" placeholder="Introduce contraseña" required pattern=""^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"" minlength="8" maxlength="16"> 
+
+                            <label class="email" for="email">Email</label>      
+                            <input class="form_control" type="email" name="email" id="email" class="form_control" placeholder="Escribe un correo electrónico valido" required>
+                            <!-- value="@tajamar.es": esto para decir que sea un correo de alguna empresa -->
+                            
+                            <datalist id="formación">
+                                <option>Graduado</option>
+                                <option>Licenciado</option>
+                                <option>Doctorado</option>
+                            </datalist>
+
+                            <label class="form_label" for="CV">Formación</label>
+                            <input class="form_control" type="text" name="CV" id="CV" placeholder="Selecciona o indica tus estudios" list="formación">
+
+                            <label for="">Fecha de nacimiento</label>
+                            <input class="form_control" type="date" name="birthDate" id="birthDate">
+                            
+                            <label class="form_label" for="info">Mas información</label>
+                            <textarea class="form_control" name="info" id="info" rows="5" placeholder="Mas información"></textarea>
+                        </fieldset>
+                        <fieldset id="condiciones">
+                            <legend>Condiciones</legend>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolorem omnis expedita maiores voluptatum est voluptates sunt laudantium, suscipit quae, id illo, sed laborum. Explicabo minus tempora alias voluptatum fuga?</p>
+                            <input type="checkbox" name="isOk" id="isOk" required>
+                            <label for="isOk">Estoy de acuerdo con las condiciones</label>
+                        </fieldset>
+                        <fieldset id="datos_curso">
+                            <legend>Datos del curso</legend>
+                            <label class="form_label" for="curso">Curso</label>
+                            <!-- <select class="form_control" name="curso" id="curso" multiple size="8"></select> --> <!-- para que sea una tabla, y para moverse, no para qu e sea despegable --> 
+                            <select class="form_control" name="curso" id="curso" required>
+                                <option value="">Elige un curso</option>
+                                <optgroup label="Desarrollo front">
+                                    <option value="HTML-01">HTML5</option>
+                                    <option value="CSS-02">CSS3</option>
+                                    <option value="JS-03">JavaScript</option>        
+                                </optgroup>
+                                <optgroup label="Programación Back">
+                                    <option value="Node-04">Node Js</option>
+                                    <option value="PHP">PHP</option>
+                                </optgroup>
+                            </select>
+                            <p>Ubicaciones</p>
+                            <div class="radio_wrapper">
+                                <input type="radio" name="sitio" id="Madrid" value="MD" required>
+                                <label for="Madrid">Madrid</label>
+                                <input type="radio" name="sitio" id="Sevilla" value="SV">
+                                <label for="Sevilla">Sevilla</label>
+                                <input type="radio" name="sitio" id="barna" value="BR">
+                                <label for="barna">Barcelona</label>    
+                            </div>
+                        </fieldset>
+                        <!-- <button  type="submit">Enviar</button> -->
+                        <button  type="submit"><i class="fas fa-paper-plane"></i>Enviar</button>
+                        <button type="reset">Borrar<i class="fas fa-trash"></i></button>
+                    </form>
+                    <p>Existe otros controles de formulario</p>
+                    <dl>
+                        <dt class="dt">Input color</dt>
+                        <dd class="dd"><input type="color"></dd>
+                        <dt class="dt">Input File</dt>
+                        <dd class="dd"><input type="file"></dd>
+                        <dt class="dt">Input number</dt>
+                        <dd class="dd"><input type="number" min="0" max="10"></dd>
+                        <dt class="dt">Input range</dt>
+                        <dd class="dd"><input type="range"></dd>
+                    </dl>
+                    <div class="clearfix"></div>
+                </header>
             </section>
         </main>  
     </div>
@@ -192,7 +282,7 @@
             <small>Tajamar</small>
             <aside>
                 <ul>
-                    <li><a href="https://www.facebook.com/ssolochicas/"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://github.com/JoseTajamar"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://google.es"><i class="fab fa-google"></i></a></li>
                 </ul>    
