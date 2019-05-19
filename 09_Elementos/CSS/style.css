@@ -111,7 +111,7 @@ ul{
 }
 .dt {
     float: left;
-    clear: right;
+    clear: left;
 }
 .clearfix {
     clear: both;

@@ -1,10 +1,11 @@
 import dialogPolyfill from "../../node_modules/dialog-polyfill/index.js"
 
 function main() {
-    document.querySelector("#btn-Info")
-    .addEventListener("click", mostrar)
+    document.querySelector("#btn-info")
+        .addEventListener("click", mostrar)
+
     document.querySelector("#btn-cerrar")
-    .addEventListener("click", cerrar)
+        .addEventListener("click", cerrar)
 
     function mostrar() {
         document.querySelector("#dlg-sample").open =true
@@ -19,18 +20,19 @@ function main2() {
     
     dialogPolyfill.registerDialog(modal);
     // Now dialog acts like a native <dialog>.
-    modal.showModal();
 
-    document.querySelector("#btn-Info")
-    .addEventListener("click", onclick)
+    document.querySelector("#btn-info")
+        .addEventListener("click", onclick)
     document.querySelector("#btn-cerrar")
-    .addEventListener("click", onclick)
+        .addEventListener("click", onclick)
 
     function onclick() {
-        if (!modal.open) (modal.open = false)
+        if (!modal.open){
+            modal.open = false
+        } 
         modal.open = !modal.open
-        if (!modal.open) {
-        modal.showModal();
+        if (modal.open) {
+            modal.showModal();
        }
     }
 }

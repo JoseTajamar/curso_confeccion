@@ -7,7 +7,8 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Multimedia-Elementos de la web</title>
     <!-- NUEVO 13-5-19 -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- NUEVO 23-5-19 -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -20,7 +21,6 @@
         <p>Clasificación de las etiquetas según el estándar HTML 5.2</p>
         <nav class="Alineación">
              <ul>
-                <li><a href="./index.html#Inicio">Inicio</a></li>
                 <li><a href="./index.html#section">Sections</a></li>
                 <li><a href="./index.html#Grouping">Grouping</a></li>
                 <li><a href="./index.html#Text-level">Text-level</a></li>
@@ -49,7 +49,7 @@
                 <li>webm</li>
             </ul>
     <h2>Elementos de navegación gráfico</h2>
-            <section class="sección_imágenes">
+            <div class="sección_imágenes">
             <!-- TODO ESTO ES NUEVO -->
                 <h3>Imágenes</h3>               
                     <img src="assets/thumbnail.png" alt="cocodrilo"> 
@@ -57,22 +57,22 @@
                     <img src="assets/3boats.webp" alt="barcas">
                     <img src="./assets/005.gif" alt="Gift animado">
                     <img src="assets/logo.svg" alt="Logotipo">  
-                    <div class="clearfix"></div>  <!-- SUPER IMPORTANTE -->
-                    <p>Uso de imágenes responsivas en html</p>
-                    <div>
-
-                      <!-- <img src="./assets/komodo.jpg" alt="Animal de commodo mostrando su pico"> -->  
-                    </div>
-             <!-- TODO ESTO ES NUEVO -->
-            </section>
-
-            <picture>
-                <source media="(min-width: 900px)" srcset="./assets/komodo.jpg" type="image/jpg">
-                <source media="(min-width: 700px)" srcset="./assets/komodo.jpg" type="image/jpg">
-                <source media="(min-width: 680px)" srcset="./assets/komodo.jpg" type="image/jpg">
-                <img src="./assets/komodo.500.jpg" alt="lagarto" style="width:auto;">
-                <p>Las etiqueta de pictures y los formatos de imagenes</p>   
-            </picture>
+            </div>
+            <div class="clearfix"></div>  
+            <p>Uso de imagenes reponsivas en HTML</p>
+            <div>
+                <img 
+                srcset="./assets/komodo.300.jpg 300w,
+                            ./assets/komodo.400.jpg 400w, 
+                            ./assets/komodo.500.jpg 500w,
+                            ./assets/komodo.jpg 600w"
+                     sizes = "(max-width: 300px) 300px,
+                             (max-width: 400px) 400px, 
+                             (max-width: 500px) 500px"       
+                    src="./assets/komodo.jpg"
+                alt="Varano de Komodo mostrando su lengua bífida">
+            </div>
+            <p>Las etiqueta de pictures y los formatos alternativos de imagenes</p> 
            <!--  NUEVO Y SI FUNCIONA -->
             <picture>
                 <source srcset="./assets/tropical-sunrise.webp" type="image/webp">
@@ -88,7 +88,6 @@
                 <figcaption>Varano de komodo</figcaption>  
             </figure>
             <!-- NUEVO Y SI FUNCIONA -->
-                <div class="clearfix"></div>
                 <section>
                     <h3>Video y Audio</h3>
                     <p>Es posible incluir un video desde una fuente externa</p>
