@@ -4,7 +4,8 @@
   "description": "Ejercicios del curso de paginas web",
   "main": "index.js",
   "dependencies": {
-    "dialog-polyfill": "^0.5.0"
+    "dialog-polyfill": "^0.5.0",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {},
   "scripts": {
