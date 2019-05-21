@@ -1,3 +1,10 @@
+
+/* body {
+    border: 1px solid black;
+    padding: 
+
+}
+ */
 /* ····················
 Estilos del Header
 ···················· */
@@ -23,56 +30,176 @@ header p {
 
 
 
-/* Selectores Combinados: */
-/* ------------------------------- */
+/* Selectores combinados (antes selectores contextuales) */
 
-/* Selector de descendientes (descendent): Simbolo el espacio*/
+/* Selector de descendientes (descendent) - símbolo el espacio  */
+section.combinadores p {
+    background-color: coral
+} 
 
-.combinadores p{
-    background-color: rgb(255, 194, 80); 
+/* Selector de hijo (child) - símbolo es el > */
+section.combinadores>p {
+    background-color: cyan
+} 
+
+/* Selector de hermanos (sibilings) - el simbolo es la ~ */
+section.combinadores div~p {
+    background-color: darkseagreen;
 }
 
-/* Selector de hijos (child): El símbolo es el >  */
-
-
-
-.combinadores > p {
-    background-color: cyan;
+/* Selector de hermanos adyacentes (adyacent sibilings) el símbolo es el + **/
+section.combinadores div+p {
+    background-color: goldenrod;
 }
 
-/* Selector de hermanos (sibilings): El simbolo es el ~ */
+/* Selector de atributo - simbolo [] */
 
-.combinadores div~p {
-    background-color: rgba(120, 223, 72, 0.938);
-}
-
-/* Selector de hermanos adyacentes (adyacents sibilings): Con el simbolo + */
-
-.combinadores div+p {
-    background-color: rgba(223, 72, 72, 0.938);
-}
-
-/* Selector de Atributos: simbolo [] */
-
-[title] {
+p[title] {
     color: crimson;
 }
-/* Atributo igual a */
+
+/* Atributo igual a  */
 [title="Extra"] {
-    color: blueviolet;
+    color: blue;
 }
 
-/* Atributo empieza por:  */
-[title*="Par"] {
-    color: darkgreen;
+/* Atributo empieza por  */
+[title^="Par"] {
+    color: darkgreen !important;
 }
 
 /* Atributo contiene  */
-
-[title^="Par"] {
-    color: rgb(192, 39, 146);
+[title*="rraf"] {
+    color: darkmagenta
 }
 
+/* Atributo termina por  */
+[title$="1"] {
+    color: gold
+}
+
+/* ····················..................
+Estilos de la seccion -pseudo-elementos u numerados
+····················..................... */
+
+.pseudo-elementos p::first-letter {
+    font-size: 3rem;
+    font-family: fantasy;
+    color: blue;
+}
+
+.pseudo-elementos p::first-line {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pseudo-elementos .medio {
+    color: rgb(33, 152, 231);
+}
+
+.pseudo-elementos .medio.pro::after,
+.pseudo-elementos .medio.pro::before {
+    content: "";
+    display: block;
+    background-color: brown;
+    color: bisque;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.banda {
+    background-color: bisque;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* .numerados p::before {
+    counter-increment: 
+}
+
+ */
+
+.comillas p::before {
+    content: open-quote;
+}
+
+.comillas p::after {
+    content: close-quote;
+}
+
+.pseudo-clases header {
+    background-color: bisque;
+}
+
+/* .pseudo-clases header:hover {
+    background-color: rgb(80, 220, 255);
+} */
+
+.pseudo-clases header p {
+    display: none;
+    
+}
+
+.pseudo-clases header:hover p {
+    display: initial;
+    padding: 1rem;
+}
+
+.pseudo-clases a {
+    color: blue;
+}
+
+.pseudo-clases a:link {
+    color: blue;
+}
+
+.pseudo-clases a:visited {
+    color:goldenrod;
+}
+
+.pseudo-clases header h2{
+    margin-bottom: 0.3rem
+}
+
+.pseudo-clases header>div {
+    display: initial;
+    padding: 1rem;
+}
+
+.pseudo-clases header:hover div {
+    display: initial;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pseudo-numericas p:nth-child(2) {
+    text-decoration: underline;
+}
+
+.pseudo-numericas p:nth-of-type(2){
+    font-style: italic;
+}
+
+.pseudo-numericas li:nth-of-type(3n) {
+    background-color: rgb(248, 237, 81);
+}
+
+.pseudo-numericas li:nth-of-type(3n+1) {
+    background-color: rgb(123, 235, 79);
+}
+
+.pseudo-numericas li:nth-of-type(3n+2) {
+    background-color: rgb(54, 205, 216);
+}
+
+.pseudo-numericas li {
+    padding-right: 2rem;
+    width: fit-content;
+}
+
+.pseudo-numericas li:last-of-type {
+    padding-right: 1.5rem;
+}
 /* ····················
 Estilos del Footer
 ···················· */
