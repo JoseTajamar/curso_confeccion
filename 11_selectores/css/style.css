@@ -13,8 +13,8 @@ Estilos del Header
 ********************/
 
 body>header {
-    background-color: brown;
-    color: bisque;
+    background-color: rgb(40, 165, 182);
+    color: rgb(253, 211, 22);
     padding-bottom: 2rem;
     padding-top: 2rem;
     padding-left: 5rem; 
