@@ -1,0 +1,73 @@
+:root {
+    --color-letra:rgb(253, 211, 22);
+    --color-fondo: rgb(70, 152, 228);
+    --font-body: 'Just Another Hand', cursive;
+    --font-title: 'Knewave', cursive;
+    --size-tittle: 2rem;
+    --size-subtitle: 1.5rem;
+    --size-base: 1.8rem;
+    --size-small: calc(12rem/16)
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.body {
+    line-height: 1;
+    font-size: var(--size-base);
+    
+}
+
+.header {
+    font-family: var(--font-title);
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    
+}
+    
+.header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--size-tittle)
+}
+
+.header p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: var(--size-subtitle: 1.5rem);
+    font-weight: bold;
+
+    
+}
+
+
+.footer {
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: var(--font-body);
+}
+.footer address {
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.footer a {
+    color: inherit;
+}
+
+main {
+    margin: 1.5rem, 2rem;
+}

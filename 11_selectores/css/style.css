@@ -225,3 +225,21 @@ Estilos de las secciones .pseudo-clases...
 /* .pseudo-numericas li:last-of-type {
     padding-right: 1.5rem;
 } */
+/******************
+Estilos del Footer
+********************/
+body>footer {
+    background-color: brown;
+    color: bisque;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+body>footer address {
+    font-style: normal
+}
+body>footer p {
+    margin-top: 0;
+    margin-bottom: 0;    
+}
