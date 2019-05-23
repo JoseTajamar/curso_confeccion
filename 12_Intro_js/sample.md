@@ -1,23 +1,37 @@
-#Titulo principal#
-##Titulo de sección##
+# Titulo principal #
+## Titulo de sección ##
 
-Ejemplo de un parrafo con **negrita** y _cursiva_
+Ejemplo de un párrafo con **negrita** y _cursiva_.
 
-Ejemplo de un codigo
+**Párrafo entero en negrita**
 
+Ejemplo de un código
 
 ```js
-let a = "pepe"
-
+let a = 'Pepe'
 ```
-Ejemplo de un codigo en linea `let b=23`
+
+Ejemplo de código en línea `let b = 23`
 
 Ejemplo de lista
-* Uno
-    * Sub lista
-* Dos
-Tres
+- Uno
+    - SUb lista
+- Dos
+- Tres
+
+![Iguana verde](../06_elementos/assets/iguana.300.jpg)
+
+![Gif animado](../06_elementos/assets/005.gif)
+
+[Microsoft](https://www.microsoft.es)
+
+[Oracle](https://www.oracle.com)
+
+[Adobe](https://www.adobe.es)
 
 
-# Introducción al JS #
-JavaScript es un lenguaje de programación imperativo completo como (#, java, PHP, etc)
+Column A | Column B | Column C
+---------|----------|---------
+ A1 | B1 | C1
+ A2 | B2 | C2
+ A3 | B3 | C3`
