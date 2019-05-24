@@ -33,10 +33,14 @@
        font-size: var(--size-base)
    }
 
+   /******************
+Estilos del Header
+********************/
+
 .header {
-    font-family: var(--font-title);
     background-color: var(--color-fondo);
     color: var(--color-letra);
+    font-family: var(--font-title);
     font-weight: bold;
     padding-bottom: 2rem;
     padding-top: 2rem;
@@ -45,14 +49,14 @@
 }
     
 .header h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+/*     margin-top: 0;
+    margin-bottom: 0; */
     font-size: var(--size-tittle);
 }
 
 .header p {
-    margin-top: 0;
-    margin-bottom: 0;
+/*     margin-top: 0;
+    margin-bottom: 0; */
     font-size:var(--size-subtitle); 
 
     
@@ -101,39 +105,30 @@ main p {
 }
 
 /**********************************
-Estilos de las seccion .inline block
-***********************************/
-
-.inline-block article{
-
-    box-sizing: content-box;
-    box-sizing:border-box;
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 1rem;
-    background-color: var(--color-verde-fondo);
-    border: 1px solid var(--color-gris-borde);
-}
-.float article{
-
-    box-sizing: content-box;
-    box-sizing:border-box;
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 1rem;
-    background-color: var(--color-verde-fondo);
-    border: 1px solid var(--color-gris-borde);
-}
-
-section.inline-block article:nth-last-of-type(2) {
-    margin-left: -4px;
-}
+Estilos de las seccion 
+***********************/
 
 section {
     margin-top: var(--margin-vertical);
+    margin-bottom: var(--margin-vertical);
 }
+
+section article {
+    width: 50%;
+    padding: 1rem;
+    background-color: var(--color-verde-fondo);
+    border: 1px solid var(--color-gris-borde);
+}
+
+section.inline-block article {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.inline-block article:nth-last-of-type(2) {
+    margin-left: -3px;
+}
+
 
 section .float article {
     float: left;
@@ -151,5 +146,5 @@ section.table article {
 }
 section.flex {
     display: flex;
-    align-items: flex-start;
+    /* align-items: center; */
 } 
