@@ -1,12 +1,37 @@
     
 @font-face {
     font-family: "source_sans_proregular";
-    src: url(../assets/SourceSansPro-Regular.otf) format('otf');
-    src: url(../assets/sourcesanspro-regular-webfont.woff2) format('woff2');
+    src: url(../assets/SourceSansPro-Regular.otf) format('truetype');
+    src: url(../assets/sourcesanspro-regular-webfont.woff2) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "love_home";
+    src: url(../assets/Lovely\ Home.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: "source_sans_proregular"
+    font-family: "source_sans_proregular", sans-serif;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: "love_home", cursive
+}
+
+.content_wrapper{
+    font-size: 1,1em;
+}
+
+/* section {
+    font-size: 0.8em;
+} */
+
+p {
+    border: 1px solid grey;
+    padding: 1em;
 }
