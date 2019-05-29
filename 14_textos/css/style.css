@@ -20,12 +20,18 @@
 
 body {
     font-family: "source_sans_proregular", sans-serif;
+    margin: 0;
+    padding: 0;
     /* text-decoration: underline; */
 }
 
 h1 {
     font-family: "love_home", cursive;
-    padding: 1em;
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius:30px;
+    background-color: deepskyblue;
 }
 
 .content_wrapper {
@@ -43,62 +49,75 @@ section.centrada p { border: 1px solid;
 }
 
 .espacios {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 1rem;
+    padding-bottom: 2.5%;
     background-color: deepskyblue;
 }
 
 .espacios h2 {
     padding: 1rem;
+    margin: 0;
 }
 
 .espacios p {
     padding: 1rem;
     background-color: rgb(233, 248, 149);   
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 
 
+.flex {
+    margin: 2rem 1rem;
+    background-color: deepskyblue;
+    padding-bottom: 5%;
+}
+
+.flex h2  {
+    padding: 1rem;
+    margin: 0;
+}
+
+.flex p  {
+    padding: 1rem;
+    background-color: rgb(233, 248, 149);
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 @media screen and (min-width: 690px) {
-    .espacios p {
-        width: 30%;
-        float: left;
-        margin-left: 2.5%;
-    }
+
     .espacios::after {
-        content: " ";
+        content: '';
         display: block;
         clear: both;
     }
-    .espacios p:last-of-type {
-        margin-right: 2.5%;
+
+    .espacios p  {
+        width: 30%;
+        float: left;
     }
 
-    .flex {
-        margin: 2rem 1rem;
-        background-color: deepskyblue;
+    .espacios p:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .flex .flex-wrapper {
+        display: flex;
     }
 
     .flex h2 {
-        padding: 1rem;
-        width: 100%;
+        text-shadow:  5px 5px 5px grey
     }
 
-    .flex .flex-wrapper{
-        display: flex;
-        text-shadow: 5px 5px 5px 5px gray;
-    
-    }
-    
     .flex p {
-        padding: 1rem;
-        background-color: rgb(233, 248, 149);
-        margin-left: 5%;
-        box-shadow: 5px 5px 5px 5px gray;
+        box-shadow: 5px 5px 10px 10px grey
     }
     
-    .flex p:last-of-type {
-        margin-right: 5%;
+    .flex p:not(:last-of-type) {
+        margin-right: 0;
     }
+ 
+
 }
