@@ -4,6 +4,7 @@ h1 {
     padding: 1rem 2rem;
     border: 1px solid;
     text-align: center;
+    line-height: 8rem;
 }
 
 main {
@@ -31,8 +32,27 @@ section.reptiles:after{
     padding-bottom: 0.5rem;
 }
 
+.table-wrapper-right {
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem
+}
+
+.table-wrapper-right:hover table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 0.2rem 1rem;
+    border: 1px solid; 
+}
+
+
 img {
     max-width: 100%;
+    vertical-align: bottom;
 }
 
 footer {
@@ -40,7 +60,8 @@ footer {
     background-color: rgb(47, 224, 255);
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 2rem 1rem 2rem
+    margin: 2rem 1rem 2rem;
+    line-height: 8rem;
     /* line-height: 25rem; */
 } 
 
@@ -48,25 +69,35 @@ body {
 margin: 0;
 }
 
+header h1, footer {
+    line-height: 8rem;
+}
+
+
+
 ul {
     list-style-position: inside;
     list-style-type: circle;
 }
 
-/* aside::before,
-aside::after {
-    
-} */
 
-.img-wrapper-center {
-    width: 50%;
-    float: left;
-    padding-left: 2rem;
-    padding-bottom: 0.5rem;
+header p {
+    padding-bottom: 1rem;
+    visibility: hidden;
+    /* display: none; */
 }
 
-section.tienda:after{
+header:hover p {
+    visibility: initial;
+    /* display: initial; */
+}
+
+
+aside:before,
+aside:after {
     content: '';
     display: block;
-    clear: both;
+    padding: 0.5rem;
+    background-color: #339966;
+    opacity: 0.6;
 }
