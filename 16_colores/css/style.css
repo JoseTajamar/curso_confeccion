@@ -1,0 +1,42 @@
+
+/* Color Theme Swatches in RGBA */
+.Coral-and-Moss-1-rgba { color: rgba(127, 26, 19, 1); }
+.Coral-and-Moss-2-rgba { color: rgba(242, 227, 164, 1); }
+.Coral-and-Moss-3-rgba { color: rgba(160, 157, 118, 1); }
+.Coral-and-Moss-4-rgba { color: rgba(42, 43, 36, 1); }
+.Coral-and-Moss-5-rgba { color: rgba(224, 73, 62, 1); }
+
+
+
+.gamma{
+    display: flex;
+}
+.gamma div {
+    height: 10rem;
+    width: 10rem;
+    color: #deb887;
+}
+
+
+
+.transp{
+    margin: 1rem;
+    border: 1px solid;
+    padding: 1rem;
+    width: 90%;
+    height: 30vh;
+}
+
+
+.transp div{
+    width: 10rem;
+    height: 10rem;
+   
+}
+
+.gradient {
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 31%, rgba(33,180,226,1) 49%, rgba(183,222,237,1) 100%);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}

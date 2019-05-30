@@ -1,0 +1,169 @@
+.main_header {
+    border-radius:30px;
+    background: linear-gradient(340deg, #3ea4d4, #3ee9ea);
+    background-size: 400% 400%;
+    border: 1px solid;
+    text-align: center;
+}
+
+.alineacion{
+    text-align:center;
+    text-align-last: center;
+}
+
+li{
+    margin: 2rem 1rem 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.main_header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main_header nav{
+    margin-left: -1rem;
+    text-align: left;
+}
+.main_header nav li{
+    display: inline-block;
+}
+
+body{
+    margin:1rem;
+}
+
+.img-wrapper-right {
+    width: 50%;
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem; 
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+main {
+    margin: 5%;
+}
+section.suecia1:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* .main_section_footer {
+    text-align: right;
+    color: brown;
+} */
+
+blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-left: 1rem;
+    max-width: 60%;
+    margin: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 10px 10px rgb(34, 135, 160);
+}
+
+div {
+    display: block;
+}
+
+.img1 {
+    width: 220px;
+    height: 479px;
+    float: right;
+    padding: 3px;
+    margin-top: 2rem;
+}
+.viaje {
+    margin-top: 5rem;
+}
+
+
+
+.main_footer{
+    border-radius:30px;
+    background: linear-gradient(340deg, #3ea4d4, #3ee9ea);
+    background-size: 400% 400%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0.02rem;
+    height: block;
+    border: 1px solid;
+}
+.main_footer aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main_footer aside li{
+    display: inline-block;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.main_footer aside a{
+    display: block;
+}
+.iframe_footer {
+    width: 100%;
+    height: 20vh;
+    border: none;
+}
+.fa-google:before {
+    color: rgb(255, 255, 255);
+}
+.fa-github:before {
+    color: aliceblue
+}
+.fa-facebook:before{
+    color: aliceblue
+}
+
+
+.main_table{
+    width: 100%;
+    text-align: center;
+
+}
+/* Filas pares */
+.main_table>tbody>tr:nth-of-type(even){
+    background-color: rgb(138, 228, 228);
+}
+/* Filas impares */
+.main_table>tbody>tr:nth-of-type(odd){
+    background-color: rgb(235, 236, 126);
+}
+.main_table>tbody>tr{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.form_control{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 0.7rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+
+    background-color: rgb(142, 231, 247)
+}
+.form_label {
+    display: block;
+    margin-top: 1rem;
+}
+fieldset {
+    margin-bottom: 1rem;
+    border-color: gray;
+}

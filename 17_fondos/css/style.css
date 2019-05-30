@@ -1,0 +1,25 @@
+header{
+    min-height: 100vh;
+
+    
+    background-color: rgba(4, 205, 255, 0.603);
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;/* vertical */
+    font-size: 2rem;
+    font-family: fantasy;
+    text-shadow: 5px 5px 5px rgb(122, 122, 122);
+    background-image: url(../asset/One-cool-wolf-wolves-37008079-1191-670.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+section{
+    margin: 2rem;
+}
+h1 {
+    color: aqua;
+}
