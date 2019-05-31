@@ -1,38 +1,72 @@
-
-/* Color Theme Swatches in RGBA */
-.Coral-and-Moss-1-rgba { color: rgba(127, 26, 19, 1); }
-.Coral-and-Moss-2-rgba { color: rgba(242, 227, 164, 1); }
-.Coral-and-Moss-3-rgba { color: rgba(160, 157, 118, 1); }
-.Coral-and-Moss-4-rgba { color: rgba(42, 43, 36, 1); }
-.Coral-and-Moss-5-rgba { color: rgba(224, 73, 62, 1); }
-
-
-
-.gamma{
+.gama {
     display: flex;
 }
-.gamma div {
+.gama div {
+    color: #deb887;
     height: 10rem;
     width: 10rem;
-    color: #deb887;
+}
+.gama div:nth-of-type(1) {
+    background-color: rgb(126, 78, 26);
+    
+}
+.gama div:nth-of-type(2) {
+    background-color: rgb(255, 193, 127);
+}
+.gama div:nth-of-type(3) {
+    background-color: hsl(31, 100%, 61%)
+}
+.gama div:nth-of-type(4) {
+    background-color: #806141
+}
+.gama div:nth-of-type(5) {
+    background-color: #CC7E2B
 }
 
-
-
-.transp{
+.transp {
+    display: flex;
     margin: 1rem;
     border: 1px solid;
     padding: 1rem;
     width: 90%;
-    height: 30vh;
+    height: 10vh;
+    background-color: aqua
 }
-
-
-.transp div{
-    width: 10rem;
+.transp div {
     height: 10rem;
-   
+    width: 10rem;
+    background-color: rgb(89, 38, 12)
 }
+
+.transp div:nth-of-type(2) {
+    background-color: rgba(89, 38, 12, 0.644)
+}
+
+.transp p {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(129, 8, 8, 0.5)
+}
+
+.opaciti {
+    margin-top: 8rem;
+    opacity: 0;
+}
+
+.opaciti:hover {
+    opacity: 1;
+}
+
+.fondo {
+    /* background-color: rgba(165, 42, 42, 0.6) */
+    opacity: 0.2;
+    background-image: url(../assets/iguana.jpg)
+}
+
+.fondo h2 { 
+    opacity: initial;
+}
+
 
 .gradient {
     background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 31%, rgba(33,180,226,1) 49%, rgba(183,222,237,1) 100%);
