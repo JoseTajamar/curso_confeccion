@@ -1,47 +1,139 @@
+    
 /**
  * JSDoc
  * @description Programa que calcula y muestra 
- *              si un numero es par o impar
+ *              si un número es par o impar
  */
 
+/**
+ * @description Función que comprueba si una expresión 
+ *      es convertible a un número valido
+ *      rechazando objects, arrays, booleans, null 
+ *      undefined, '' y string no numéricos
+ * @param {any} n 
+ * @returns {boolean}
+ */ 
+function isValidNumber(n) {
+    let r = true
+    if ( isNaN(n) || typeof n == 'boolean' 
+    || Array.isArray(n) || n === ''  || n === null) {
+        r = false
+    }
+    return r
+}
+
+/**
+ * 
+ * @param {number} n 
+ * @returns {boolean}
+ */
+function isEntero( n = 0) {
+     return (parseInt(n) === parseFloat(n))
+}
 
  /**
-  * @description Funcion que calcula si un numero es par
+  * @description Función que calcula si un número es par
+  *     Puede devolver: -2, -1, true, false
   * @param {number}: n
-  * @returns {boolean}
+  * @returns {*}
+  * 
   */
-
   function esPar(n) {
-      let r = true
-      console.log( (n%2) )
-      return r
+    let r = true 
+    if (!isValidNumber(n)) {
+        // Excepción: n no es un número
+        return -2
+    } else if (!isEntero(n)) {
+        // Excepción: n no es entero
+        return -1
+    } else if (n%2)  {
+        r = false
+    }
+    return r
   }
 
 
-  let x = 1
-  console.log( !(x%2) )
-  x = 2
-  console.log( !(x%2) )
-  x = 3
-  console.log( !(x%2) )
-  x = 4
-  console.log( !(x%2) )
+  /**
+   * @description Función que muestra si un número es par o impar
+   * @param {number}: n
+   * @returns {void}
+   */
+
+   function mostrar(n) {
+       let mensajes = [
+           `El número ${n} es impar`,
+           `El número ${n} es par`,
+           `El número ${n} no es entero`,
+           `${n} no es un número`
+       ]
+       let i = Number(esPar(n)) // -2 -1, 0, 1
+       if ( i< 0) { // código de error
+         i = -i + 1 // -1 -> 2 // -2 -> 3
+       }
+       console.log(mensajes[i])
+   }
+
+   function probar() 
+        {
+        let x
+        x = 1
+        x = 2
+        x = 345
+        x = 98
+        x = 0
+        x = -4
+        x = -5
+        x = 4.3
+        x = -56.7
+        x = 'pepe'
+        x = '56'
+        mostrar(x)
+        }
+   
+   //probar()
+
+    /* (()=>{})()   */      
 
 
-/**
- * @description Funcion que muestra si un numero es par o impar
- * @param {number}: n
- * @returns {void}
- */
+/*    function errores (){
+        const x = 67
+        try {
+        x = 56   
+        } catch (error) {
+            console.log('Disculpa, se ha producido un error')
+            console.log(typeof error.message)
+        }
+  
+   }    
+    */
 
-function mostrar(n) {
-    mensajes = [
-        'El numero ${n}  es par'
-        'El numero ${n} es par'
-    ]
-    let i = 0
-    Number(esPar(n))
-    console.log(mensajes[i])
-}
+    //Esplicacion sobre Gestion de errores
+    const x = 67
+    try {
+        //x = 51  
+       throw 'Probando error'
+    } catch (error) {
+        console.log('Disculpa, se ha producido un error')
+        if(error.name) {
+            console.log(error.name, error.message)
+        } else {
+            console.log(error)
+        }
+    }
+    console.log(x)
+    ////////////////////////////////////////
 
 
+    function esPar(n) {
+        let r = true 
+        if (!isValidNumber(n)) {
+            // Excepción: n no es un número
+            throw -2
+        } else if (!isEntero(n)) {
+            // Excepción: n no es entero
+            throw -1
+        } else if (n%2)  {
+            r = false
+        }
+        return r
+      }
