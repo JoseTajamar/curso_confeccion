@@ -1,7 +1,26 @@
 body {
     margin: 0;
 }
-header {
+header, footer {
     background-color: rgb(116, 221, 125);
     color: rgb(6, 146, 211);
+}
+main {
+    min-height: 80vh;
+    background-color: bisque;
+}
+
+.colum_wrapper{
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.columnas {
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 1px solid;
+}
+
+.columnas p:first-of-type(1){
+    margin-top: 0;
 }
