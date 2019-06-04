@@ -1,29 +1,29 @@
+
 describe('Función esPar', () => {
-    let esPar = require('../10_pares.js')
+    let esPar = require('../11_pares_try.js')
 
     it('should be "par" if n = 0 ', () => {
         let n = 0
         expect(esPar(n)).toEqual(true)
     })
 
-    
     it('should be "impar" if n = 1 ', () => {
-        n = 1
+        let n = 1
         expect(esPar(n)).toEqual(false)
     })
 
     it('should be "par" if n = 2 ', () => {
-        n = 2
+        let n = 2
         expect(esPar(n)).toEqual(true)
     })
 
     it('should be "impar" if n = string "11" ', () => {
-        n = '23'
+        let n = '23'
         expect(esPar(n)).toEqual(false)
     })    
 
     it('should be "par" if n = string "22" ', () => {
-        n = '22'
+        let n = '22'
         expect(esPar(n)).toEqual(true)
     })
 
@@ -37,19 +37,16 @@ describe('Función esPar', () => {
         expect(esPar(n)).toEqual(true)
     })
 
-    it('should be -2 if n = "pepe"', () => {
+    it('should throw error if n = "pepe"', () => {
         let x = 'pepe'
-        expect(esPar(x)).toEqual(-2);
-    })
+        expect(esPar.bind(x)).toThrowError(/no es un número/);
+    });
 
-    it('should be -1 if n = 4.3', () =>  {
+    it('should throw error if n = 4.3', () =>  {
         let x = 4.3
-        expect(esPar(x)).toEqual(-1);
+        expect(esPar.bind(x)).toThrow();
     });
     
-    it('should be -1 if n = -6.7', () =>  {
-        let x = -56.7
-        expect(esPar(x)).toEqual(-1);
-    });
+    // x = -56.7
 
 })

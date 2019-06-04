@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 }
@@ -18,7 +21,8 @@ main {
 .columnas {
     column-count: 3;
     column-gap: 2rem;
-    column-rule: 1px solid;
+    column-rule: 1px solid blue;
+    column-fill: balance;
 }
 
 .columnas p:first-of-type(1){

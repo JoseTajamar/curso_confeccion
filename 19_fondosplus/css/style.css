@@ -1,0 +1,89 @@
+header{
+    min-height: 100vh;
+    position: relative;
+    
+    /* background-color: rgba(4, 205, 255, 0.603); */
+
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;/* vertical */
+    font-size: 2rem;
+    font-family: fantasy;
+    text-shadow: 5px 5px 5px rgb(122, 122, 122);
+    z-index: 20;
+}
+/* section{
+    margin: 2rem;
+} */
+header::after{
+    content: '';
+    display:block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.3;
+    background-image: url(../asset/One-cool-wolf-wolves-37008079-1191-670.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-blend-mode: multiply; */
+    
+}
+
+h1 {
+    color: aqua;
+    width: fit-content;
+    text-align: center;
+    padding: 2rem;
+    z-index: 20;
+    margin: 0;
+}
+
+.logo{
+    width: 20%;
+    display: block;
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+}
+.logo img {
+    max-width: 100%;
+    min-width: 80%;
+}
+
+.content_wrapper{
+/*     background-image: url(../asset/tropical-sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed; */
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* .content_wrapper section:nth-of-type() */
+
+footer {
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 31%, rgba(33,180,226,1) 49%, rgba(183,222,237,1) 100%);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.alineacion{
+    background-color: aquamarine;
+    
+}
+
+ul {
+    display:block;
+    list-style: square;
+    margin-inline-start: 2.5rem;
+    margin-inline-end: 0rem; 
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
