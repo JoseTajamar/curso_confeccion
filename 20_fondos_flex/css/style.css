@@ -1,0 +1,56 @@
+body {
+    margin:0;
+}
+
+header{
+   position:relative;
+   min-height: 100vh;
+   display:flex;
+
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+header::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0.3;
+    background-image: url(../assets/komodo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.borde{
+    border: 1px solid;
+}
+
+
+div{
+    border:  1px solid;
+    width: 100%;
+    
+
+}
+
+div.superior{
+    flex: 1 1 auto;
+    display: flex;
+    /* background-color: aqua; */
+}
+div.menu-wrapper{
+    flex: 6 1 auto;
+}
+
+div.logo-wrapper{
+    flex: 1 1 auto;
+}
+div.inferior{
+    flex: 8 1 auto;
+}

@@ -1,0 +1,35 @@
+
+nav a{
+        color:inherit;
+        text-decoration: none;
+}
+ 
+nav ul{
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1000px)
+
+
+{
+        
+
+
+/* ============== */
+/* = Contenidos = */
+/* ============== */
+
+
+    article{
+    float: left;
+    clear: left;
+    margin: 2em;
+    }
+    figure {
+    float: left;
+    width: 50%;
+    }
+    img {
+    width: 100%
+    }
+}
