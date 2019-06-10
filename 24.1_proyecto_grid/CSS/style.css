@@ -1,0 +1,169 @@
+
+   * {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   
+   body {
+       line-height: 1;
+       font-family: var(--font-main);
+       font-size: var(--size-base);
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+       grid-template-rows: 2fr auto auto 1fr;
+       grid-template-areas: 
+            "header header"
+            "main main"
+            "aside aside"
+            "footer footer"
+   }
+   
+   /******************
+   Estilos del Header
+   ********************/
+   
+   .header {
+       background-color: var(--color-fondo);
+       color: var(--color-letra);
+       font-family: var(--font-title);
+       font-weight: bold;
+       padding-bottom: 2rem;
+       padding-top: 2rem;
+       padding-left: 5rem; 
+       grid-area: header;
+   }
+       
+   .header h1 {
+       font-size: var(--size-title)
+   }
+   
+   .header p {
+       font-size:var(--size-subtitle); 
+   }
+   
+   /******************
+   Estilos del Footer
+   ********************/
+   .footer {
+       background-color: var(--color-fondo);
+       color: var(--color-letra);
+       font-size: var(--size-small);
+       text-align: center;
+       padding-bottom: 1rem;
+       padding-top: 1rem;
+       grid-area: footer;
+   }
+   .footer address {
+       font-style: normal
+   }
+   
+   .footer a {
+       color: inherit;
+   }
+   
+   /******************
+   Estilos del main
+   ********************/
+   
+   main, aside {
+       margin: var(--margin-lateral);
+       margin-left: var(--margin-lateral);
+   }
+   
+   main{
+        grid-area: main; 
+   } 
+
+   aside {
+        grid-area: aside;
+        margin-bottom: var(--margin-vertical)
+    }
+
+
+   main h2, 
+   aside h2 {
+       font-family: var(--size-subtitle);
+       font-size: var(--size-title-section);
+       margin-bottom: calc( var(--margin-vertical)/2);
+       margin-top: calc( var(--margin-vertical)/2);
+       font-weight: bold;
+       padding-left: 1rem;
+   }
+
+   main h3 {
+       font-size: var(--size-title-article);/* <--------------------- */
+       font-weight: bold;
+   }
+   
+   main p {
+       margin-bottom: var(--margin-parrafo);
+       margin-top: var(--margin-parrafo);
+   }
+   
+   /**********************************
+   Estilos de las secciones 
+   ***********************************/
+   section {
+       margin-top: var(--margin-vertical);
+       margin-bottom: var(--margin-vertical);
+   }
+   
+    section>header {
+        color: var(--color-fondo);
+        background-color: var(--color-letra);
+        padding: 0.3rem 1rem;
+        margin-bottom: var(--margin-parrafo);
+    }
+
+   section article {
+       padding: 1rem;
+       background-color: var(--color-verde-fondo);
+       border: 1px solid var(--color-gris-borde);    
+   }
+   
+   
+   @media screen and (min-width: 600px) {
+            body{
+                grid-template-areas: 
+                "header header"
+                "main main"
+                "aside aside"
+                "footer footer"
+            } 
+   }
+
+
+    @media screen and (min-width: 800px) {
+
+
+
+        section.grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr  ;
+            grid-template-rows: 1fr auto;
+            grid-column-gap: 0.5rem;
+            grid-template-areas:
+                "header header header"
+                "col1 col2 col3"
+        }
+
+        section>header {
+            grid-area: header;
+        }
+
+        section>article:nth-last-of-type(1){
+            grid-area: col1;
+        }
+        section>article:nth-last-of-type(2){
+            grid-area: col2;
+        }
+        section>article:nth-last-of-type(3){
+            grid-area: col3;
+        }
+    
+    }
