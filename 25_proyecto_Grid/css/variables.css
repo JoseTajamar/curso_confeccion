@@ -1,8 +1,8 @@
 :root {
-    --color-letra:rgb(253, 211, 22);
-    --color-fondo: rgb(70, 152, 228);
-    --color-verde-fondo:rgb(32, 178, 117);
-    --color-gris-borde: gray;
+    --color-letra: bisque;
+    --color-fondo: maroon;
+    --color-gris-fondo: lightgray;
+    --color-gris-borde: rgb(165, 165, 165);
     --font-main: 'Lato', sans-serif;
     --font-title: 'Baloo Bhai', cursive;
     --size-title: calc( var(--size-small) * 3);
