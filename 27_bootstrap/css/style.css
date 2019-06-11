@@ -1,0 +1,27 @@
+:root {
+    --color-letra:rgb(253, 211, 22);
+    --color-fondo: rgb(70, 152, 228);
+    --color-verde-fondo:rgb(32, 178, 117);
+    --color-gris-borde: gray;
+    --font-main: 'Lato', sans-serif;
+    --font-title: 'Baloo Bhai', cursive;
+}
+
+body{
+    font-family: var(--font-main)
+}
+
+.main_header{
+    min-height: 10vh;
+    font-family: var(--font-title);
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.main_footer{
+    background-color: var(--color-fondo);
+    color: var(--color-letra);
+    min-height: 10vh;
+}
