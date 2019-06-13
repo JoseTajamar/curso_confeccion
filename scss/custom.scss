@@ -1,9 +1,15 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$theme-colors: (
+  "letra": bisque,
+  "fondo": maroon
+);
 
-$color-letra:rgb(253, 211, 22);
-$color-fondo: rgb(70, 152, 228);
+$font-family-base: 'Lato', sans-serif;
 
-$colores_tema: {
-    "color-letra": rgb(253, 211, 22),
-    "color-fondo": rgb(70, 152, 228);
+.header-font {
+  font-family: 'Baloo Bhai', cursive;;
 }
+.min-vh-10 {
+  min-height: 10vh;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

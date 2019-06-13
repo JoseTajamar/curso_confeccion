@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header-font text-letra bg-fondo pt-4 pb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs">
+                    <h1>Uso de Bootstrap</h1>   
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                   <ul class="nav justify-content-center ">
+                       <li class="nav-item">
+                           <a class="nav-link text-letra" href="./index.html">Home</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-letra" href="#">Clientes</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link text-letra" href="#">Contactos</a>
+                       </li>
+                   </ul>
+                </div>
+                <div class="col-6">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="nav-item">
+                            <a href="#usos" class="nav-link active">Uso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#samples" class="nav-link">Ejemplos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#components" class="nav-link">Componentes</a>
+                        </li>
+                        <li class="nav-item">
+                                <a href="#" class="nav-link">Datos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Active</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Action</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Another link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+        <div class="container">
+            <main>
+                <section class="col-xs-1-12">
+                    <div class="jumbotron">
+                        <h1 class="display-3">Datos</h1>
+                        <p class="lead">Formulario</p>
+<!--                         <hr class="my-2">
+                        <p>More info</p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+                        </p> -->
+                    </div>
+                    <form>
+                        <h2>¿Te quieres registrar para apoyar nuestra familia Shinigami?</h2>
+                        <p>Datos a rellenar:</p>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1">Dirección de correo</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1">¿Que clase deseas?</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Paladín</option>
+                                <option>Mago/a</option>
+                                <option>Hogokai</option>
+                                <option>Poseido</option>
+                                <option>Anciano/a</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect2">Elige tu gremio</label>
+                              <select multiple class="form-control" id="exampleFormControlSelect2">
+                                <option>Aventureros</option>
+                                <option>Aprendices de Dioses</option>
+                                <option>Piratas</option>
+                                <option>Señor de Planetas</option>
+                                <option>Consejo</option>
+                              </select>
+                            </div>
+                            <div>
+                                <p>Elige tu poder:</p>
+                                <select class="custom-select custom-select-lg mb-3">
+                                    <option selected>Elegir</option>
+                                    <option value="1">Fuego</option>
+                                    <option value="2">Hielo</option>
+                                    <option value="3">Oscuridad</option>
+                                </select>   
+                            </div>
+
+                            <p>¿De que ciudad vienes?</p>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">Madrid</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">Barcelona</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline3">Sevilla</label>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Describete</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </form>
+                     <!-- <div class="container">
+                        <form>
+                            <fieldset class="form-group row">
+                                <legend class="col-form-leyend col-12">Datos de usuario</legend>
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-4 col-lg-2 col-form-label">Nombre</label>
+                                    <div class="col-8 col-lg-4">
+                                        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                    </div>   
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputApellido" class="col-4 col-lg-2 col-form-label">Apellidos</label>
+                                    <div class="col-8 col-lg-4">
+                                        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
+                                    </div>                                    
+                                </div>
+                                <div class="form-group">
+                                  <label for="" class="col-4 col-form-label"></label>
+                                  <input type="password" class="col-8 form-control" name="passw" id="passw" placeholder="">
+                                </div>
+                            </fieldset>
+                            <fieldset class="form-group row">
+                                <legend class="col-form-legend col-sm-1-12">Group name</legend>
+                                <div class="col-sm-1-12">  
+                                </div>
+                            </fieldset>
+                            <div class="form-group row">
+                                <div class="offset-sm-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Action</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> -->
+                </section>
+            </main>
+        </div>
+        
+    <footer class="min-vh-10 text-letra bg-fondo d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-xs-12">
+                    <address class="mb-0"> Jose Kira</address>   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
