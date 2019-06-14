@@ -1,0 +1,19 @@
+.main-header, 
+.main-footer{
+    background-color: brown;
+    color: bisque;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display:flex;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    display:block;
+    padding: 1rem;
+}

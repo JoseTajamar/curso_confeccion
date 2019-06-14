@@ -1,13 +1,74 @@
+
+-const page = 2
+-let titulo = 'Hola Pug'
+-const charset = 'utf-8'
+-const empresa = 'Colegio <b>Tajamar<b>'
+-const aPaises = [{nombre:'España', id: 'es' },{nombre:'Francia', id: 'fr' },{nombre:'Italia', id: 'it' } ]
+-const aMenu = [{nombre:'Inicio', id: 'inicio', description: }]
+-const aMenuP =[{nombre:'Paginas Web' , id: 'web', description:blabla }]
+-const aMenu =
+{nombre:'MobileApps' , id: 'app', description:blabla }]
+
+{nombre: 'Nosotros', id: 'nosotros'}, description:blabla ]
+
+-const aMenuP = ['Web','MobileApps', 'IX/UI']
+
+-let x = 5
+-x = x*x
+-function suma(x,y) {}
+
+//Mixin
+mixin itemMenu(item)
+    li
+        a(href="#"+item.toLowerCase()) #{item}
+
 doctype
 html(lang=language)
-    head
-        meta(charset='utf-8')
-        title Hola pug
+    head 
+        meta(charset=charset)
+        title #{titulo}
+        link(rel="stylesheet", href="./css/style.css")
     body
-        header
-            h1 Hola Pug
+        header#main-header.main-header
+            -if (page ==1) {
+                h1= titulo
+            -} else {
+                h1 #{titulo} - Continuación
+            -}
+            nav.main-menu
+                ul
+                    each item in aMenu 
+                        +itemMenu(item)
+            
         section 
             p.
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti accusantium magnam dolores tenetur maxime, assumenda repellendus quidem inventore libero omnis dolorum quasi voluptas tempore! Expedita iure corporis nulla beatae tenetur.
-        footer
-            address #{autor}
+            p.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto illum velit modi, culpa laboriosam adipisci aspernatur aliquid itaque esse incidunt, neque voluptatem doloribus excepturi vitae nulla, veritatis sed doloremque rerum?
+            div.info Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti id quibusdam mollitia quia eos eaque pariatur quisquam ducimus voluptatibus obcaecati cupiditate, aperiam commodi optio dolorum accusantium ab tenetur natus!
+            figure 
+                img(src="https://via.placeholder.com/500x350", alt="")
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aliquam repudiandae repellat sed laborum commodi, illo eius sit facilis incidunt modi voluptatem maiores animi. Tempora ipsam consequatur at officia incidunt?
+        section
+            form(action="")
+                select(name="pais")
+                    //- -for (i=0; i < aPaises.length; i++){
+                    //- -let item = aPaises [i]
+                    //- option(value = item.id) #{item.nombre}
+                    //- -}
+                    each item in aPaises
+                        option(value="item.id" title=item.description)                  
+        section#portfolio
+            header
+                h2 Portfolio
+                nav 
+                    ul
+                        each item in aMenuP 
+                            +itemMenu(item)
+            p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis architecto asperiores odit enim, vitae molestias dicta deserunt ullam dolorum aspernatur perferendis assumenda tenetur doloremque quas maxime quod ab at fugiat.
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugiat rerum voluptates est illum nobis dolorem nihil dicta blanditiis laudantium dolorum tempora optio explicabo nisi distinctio eos, nostrum, in ipsam?
+
+        footer(class="main-footer") 
+            address &copy; #{autor}
+            small!= empresa
+            
