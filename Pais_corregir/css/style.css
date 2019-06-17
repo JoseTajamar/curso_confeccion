@@ -13,23 +13,9 @@
 
 body {
     margin: 0;
+    display: block;
 }
 
-
-
-/* Menu Nav */
-
-.top-i{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-}
-
-.top-i  a{
-    letter-spacing: 1.7px;
-    margin-left:1rem;
-}
 
 /* ICONOS */
 .fa-instagram::before{
@@ -52,40 +38,88 @@ body {
     position: fixed;
     text-align:center;
     text-align-last: center;
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0;
     width: 100%;
-    
+    z-index: 100;
 }
 
-nav a {
+.main_header {
+	background: -webkit-linear-gradient(top, rgb(225,255,255) 0%,rgb(225,255,255) 7%,rgb(225,255,255) 12%,rgb(253,255,255) 12%,rgb(230,248,253) 30%,rgb(200,238,251) 54%,rgb(190,228,248) 75%,rgb(177,216,245) 100%);
+	color: rgb(0, 0, 0);
+	height: 130px;
+	box-shadow: 10px 0 10px grey;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 100;
+}
+
+/* ///////////////////////////// */
+
+/* Menu Nav */
+
+.iconos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.iconos  a{
+    letter-spacing: 1.7px;
+    margin-left:1rem;
+}
+
+/* nav a {
     color: inherit;
     text-decoration: none;
     display: block;
     padding: 1rem;
 }
 
+
 nav ul{
+    padding-top: 3rem;
     list-style: none;
     text-align:center;
     text-align-last: center;
-    /* background-color: #ffffff; */
-    box-shadow: 10px 0 10px grey;
-    padding: 1.5rem;
+    max-width: 100%;
 }
-nav{
-    text-align: left;
-}
+
 nav li{
     font-family: 'Oswald', sans-serif;
     display: inline-block;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-a{
-    color: indianred;
+/*     margin-left: 0.5rem;
+    margin-right: 0.5rem; */
+ 
+
+nav a {
+    color: inherit;
     text-decoration: none;
-    display: block;
-    padding: 1rem;
+}
+nav{
+    height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+    margin: 0 auto; /* Centro el contenedor */
+    overflow: hidden;
+    text-align: center;
+    width: 100%; /* Defino el ancho de mi página */
+}
+ul{
+    float: inherit;
+    list-style-type: none; /* Elimino los estilos de lista */
+    padding: 0; 
+}
+li{
+    float: left; /* Floto los li para que se dispongan horizontalmente */
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+}
+li a{
+    padding: 25px; /* El padding añadirá separación entre los elementos */
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-style: italic;
+    font-size: 24px;;
 }
 /* Menu Nav */
 
@@ -97,9 +131,9 @@ header {
     align-items: center;
 }
 
-header::before{
+/* header::before{
     content: '';
-    display: block;
+    display: flex;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -111,7 +145,7 @@ header::before{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
+} */
 
 h1{
     font-family:"standorf";
@@ -130,8 +164,9 @@ h1{
 
 /* HISTORIA */
 .quever{
+    margin-top: 10rem;
     display: inline-table;
-    margin: 0;
+    margin: 8rem 0 0 0;
     background-color: #b3ffa0;
     padding-block-end: 2rem;
 }
@@ -308,7 +343,6 @@ p {
 /* //FOOTER */
 
 .main_footer{
-    border-radius:30px;
     background: linear-gradient(340deg, #3ea4d4, #3ee9ea);
     background-size: 400% 400%;
     color: rgb(255, 255, 255);

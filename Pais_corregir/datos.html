@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web de un sitio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./sidebar_sites_earth_world_globe_20458.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="body">
+    <header class="main_header">
+        <h1><i class="fas fa-globe"></i>Formulario<i class="fas fa-globe"></i></h1>  
+        <nav class="alineacion">
+            <ul>
+                <li><a href="./index.html#Datos">Datos</a></li>
+                <li><a href="#Formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="formulario">
+            <form action="https://jsonplaceholder.typicode.com/users" method="POST" 
+            name="complete-post" method="POST">
+                <fieldset id="datos_personales">
+                    <legend>Datos personales</legend>
+                    <label class="form_label" for="userName">Nombre de usuario</label>
+                    <input class="form_control" type="text" id="userName" name="userName" placeholder="Dime tu nombre y apellidos" required>
+
+                    <label class="form_label" for="userPassword">Contraseña</label> 
+                    <input class="form_control" type="password" id="userPassword" name="userPassword" placeholder="Introduce contraseña" required pattern="	
+                    (?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*" minlength="8" maxlength="16"> 
+
+                    <label class="email" for="email">Email</label>      
+                    <input class="form_control" type="email" name="email" id="email" class="form_control" placeholder="Escribe un correo electrónico valido" required>
+                    <!-- value="@tajamar.es": esto para decir que sea un correo de alguna empresa -->
+
+                    <label for="">Fecha de nacimiento</label>
+                    <input class="form_control" type="date" name="birthDate" id="birthDate">
+                    
+                    <label class="form_label" for="info">Mas información</label>
+                    <textarea class="form_control" name="info" id="info" rows="5" placeholder="Mas información"></textarea>
+                    <button  type="submit"><i class="fas fa-paper-plane"></i>Enviar</button>
+                    <button type="reset">Borrar<i class="fas fa-trash"></i></button>
+                </fieldset>
+    </section>
+    
+    <footer class="main_footer">
+            <p>José Velarde - ©Lechero´´SA</p>
+            <a href="mailto://ElLechero@hotmail.es">Enviar correo</a>
+            <address>
+                <a href="mailto://ElLechero@hotmail.es"></a> 
+            </address>
+            <small>Tajamar</small>
+            <aside>
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/JoseTajamar"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://google.es"><i class="fab fa-google"></i></a></li>
+                </ul>    
+            </aside>
+    </footer>
+</body>
+</html>
