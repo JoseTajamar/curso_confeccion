@@ -363,6 +363,7 @@ p {
     border: none;
 }
 
+/* TABLAS */
 
 .main_table{
     width: 100%;
@@ -381,27 +382,9 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+/* TABLAS */
 
 
-.form_control{
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid gray;
-    padding-top: 0.7rem;
-    padding-bottom: 0.2rem;
-    margin-bottom: 1rem;
-
-    background-color: rgb(142, 231, 247)
-}
-.form_label {
-    display: block;
-    margin-top: 1rem;
-}
-fieldset {
-    margin-bottom: 1rem;
-    border-color: gray;
-}
 
 @media screen and (max-width: 600px) {
     body{
