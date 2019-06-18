@@ -19,7 +19,7 @@
         <nav id="menu_principal">
             <ul class="menu">
               <li><a href="index.html">Inicio</a></li>
-              <li><a href="#ver">Que ver</a></li>
+              <li><a href="index.html#ver">Que ver</a></li>
               <li><a href="#guia">Guias de viaje</a>
                 <ul>
                   <li><a href="">Transporte</a> </li>
@@ -47,23 +47,22 @@
                 <h3><a href="mailto:infosuiza@hotmail.com">infosuiza@hotmail.com</a> </h3>
             </div>
         </div>
-        <div id="formulario">
-            <h5>Datos de contacto</h5>
-            <form>
+            <form class="formulario">
+              <h3>Datos de contacto</h3>  
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputEmail4">Email</label>
                         <input type="email" class="form-control" id="inputEmail4" placeholder="Escribe un correo electrónico valido" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
+                        <label for="inputPassword4">Contraseña</label>
                         <input type="password" class="form-control" id="inputPassword4" placeholder="Introduce contraseña" required pattern="	
                         (?=^.{6,255}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*" minlength="8" maxlength="16">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="inputAddress">Dirección</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Introduce tu dirección">
                 </div>
                 <div class="form-group">
                     <label for="inputAddress2">Address 2</label>
@@ -71,15 +70,15 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
                     </div>
                     <div class="form-group col-md-2">
                         <label for="inputZip">Zip</label>
@@ -96,10 +95,10 @@
                     </div>
                     <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i>Enviar</button>
                     <button class="btn btn-primary" type="reset">Borrar<i class="fas fa-trash"></i></button>
-                </form>
-        </div>
+            </form>
     </main>
 
+    <img id="publicidad" src="assets/publi1.jpg" alt="">
     
     <footer class="main_footer">
         <p>José Velarde - ©Lechero´´SA</p>

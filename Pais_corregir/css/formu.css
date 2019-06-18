@@ -1,3 +1,7 @@
+
+body {
+    margin: 0%;
+}
 /* DATOS HTML */
 .form_control{
     display: block;
@@ -31,6 +35,25 @@ fieldset {
     background-position: center;
     background-size: cover;
 }
+
+.formulario{
+    margin-left: auto;
+    margin-right:auto;
+    max-width: 60%;
+    background: rgba(241,195,131,1);
+    background: -moz-linear-gradient(top, rgba(241,195,131,1) 0%, rgba(241,195,131,1) 12%, rgba(239,124,1,1) 50%, rgba(240,196,143,1) 87%, rgba(240,196,143,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,195,131,1)), color-stop(12%, rgba(241,195,131,1)), color-stop(50%, rgba(239,124,1,1)), color-stop(87%, rgba(240,196,143,1)), color-stop(100%, rgba(240,196,143,1)));
+    background: -webkit-linear-gradient(top, rgba(241,195,131,1) 0%, rgba(241,195,131,1) 12%, rgba(239,124,1,1) 50%, rgba(240,196,143,1) 87%, rgba(240,196,143,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,195,131,1) 0%, rgba(241,195,131,1) 12%, rgba(239,124,1,1) 50%, rgba(240,196,143,1) 87%, rgba(240,196,143,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,195,131,1) 0%, rgba(241,195,131,1) 12%, rgba(239,124,1,1) 50%, rgba(240,196,143,1) 87%, rgba(240,196,143,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,195,131,1) 0%, rgba(241,195,131,1) 12%, rgba(239,124,1,1) 50%, rgba(240,196,143,1) 87%, rgba(240,196,143,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1c383', endColorstr='#f0c48f', GradientType=0 );
+    border-radius: 103px;
+    box-shadow: 10px 10px 10px grey;
+    padding: 1.5rem;
+    font-family: cursive;
+}
+
 
 .row{
     display: flex;
@@ -157,14 +180,14 @@ a:hover{
   }
 
   .btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    color: rgb(0, 0, 0);
+    background-color: #6fc0e6;
+    border-color: none;
   }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #1f387c;
+    border-color: none;
   }
 /*   .boton1 {
     text-decoration: none;
@@ -177,3 +200,12 @@ a:hover{
     border: 2px solid #0016b0;
   }
    */
+
+
+   @media screen and (max-width: 600px) {
+    body{
+     margin:0;
+     
+     }
+   
+ }
