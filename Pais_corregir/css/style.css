@@ -229,7 +229,6 @@ p {
     max-width: 960px;
     margin: 0 auto;
     
- 
 }
 .foto-2 img{
     width: 100%;
@@ -296,6 +295,7 @@ p {
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
+
 /* FOTOS */
 
 .subtitulo{
@@ -345,11 +345,32 @@ p {
 
 .gridver{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-column-gap: 0.2rem;
-    grid-row-gap: 0.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    justify-items: center;
+    grid-template-columns: 2fr 2fr;
+/*     grid-column-gap: 0.2rem;
+    grid-row-gap: 1.5rem; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+ /*    max-width: 50%; */
+}
+
+.item1,.item3 {
+    display: grid;
+    position: relative;
+    align-content:end;
+}
+
+.gridver > div {
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.gridver img{
+    width: 300px; 
+    height: 200px;
+    border-radius: 30px;
 }
 
 .gridver h4{
@@ -412,19 +433,29 @@ p {
     body{
      margin:0;
      }
-   
+    
+     .gridver img{
+        max-width: 300px; 
+        max-height: 200px;
+    }
  }
 
 @media screen and (max-width: 600px) {
     body{
      margin:0;
      }
-   
+     .gridver img{
+        max-width: 300px; 
+        max-height: 200px;
+    }
  }
  @media screen and (max-width: 800px) {
     body{
      margin:0;
      }
-   
+     .gridver img{
+        max-width: 300px; 
+        max-height: 200px;
+    }
  }
 
