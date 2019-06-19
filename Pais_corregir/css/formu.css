@@ -1,7 +1,14 @@
 
-body {
-    margin: 0%;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline;
 }
+
 /* DATOS HTML */
 .form_control{
     display: block;
@@ -50,7 +57,7 @@ fieldset {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1c383', endColorstr='#f0c48f', GradientType=0 );
     border-radius: 103px;
     box-shadow: 10px 10px 10px grey;
-    padding: 1.5rem;
+    padding: 2.5rem;
     font-family: cursive;
 }
 
@@ -63,6 +70,7 @@ fieldset {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
+    margin-bottom: 2.3rem;
 }
 
 .correo h3{
@@ -202,10 +210,28 @@ a:hover{
    */
 
 
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 300px) {
+  body{
+    margin:0;
+    }
+  
+}
+  @media screen and (max-width: 480px) {
+  body{
+    margin:0;
+    }
+  
+}
+
+@media screen and (max-width: 600px) {
     body{
      margin:0;
-     
+     }
+   
+ }
+ @media screen and (max-width: 800px) {
+    body{
+     margin:0;
      }
    
  }

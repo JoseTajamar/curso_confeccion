@@ -1,0 +1,193 @@
+
+* {
+    box-sizing: border-box;
+    vertical-align: baseline;
+    
+}
+
+@font-face {
+    font-family:"standorf";
+    src: url(../assets/STANFORD\ FREE.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa-instagram::before{
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    border-radius: 8px;
+}
+.fa-facebook:before{
+    color: rgb(0, 111, 185);
+}
+.fa-twitter::before{
+    color: #4fc7ff;
+}
+
+
+.Alineación {
+    overflow:hidden; 
+    position: fixed;
+    text-align:center;
+    text-align-last: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.main_header {
+	background: -webkit-linear-gradient(top, rgb(225,255,255) 0%,rgb(225,255,255) 7%,rgb(225,255,255) 12%,rgb(253,255,255) 12%,rgb(230,248,253) 30%,rgb(200,238,251) 54%,rgb(190,228,248) 75%,rgb(177,216,245) 100%);
+	color: rgb(0, 0, 0);
+	height: 130px;
+	box-shadow: 10px 0 10px grey;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 100;
+}
+
+/* ///////////////////////////// */
+
+/* Menu Nav */
+
+.iconos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}
+
+.iconos  a{
+    letter-spacing: 1.7px;
+    margin-left:1rem;
+}
+
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+nav{
+    height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+    margin: 0 auto; /* Centro el contenedor */
+    overflow: hidden;
+    text-align: center;
+    width: 100%; /* Defino el ancho de mi página */
+}
+ul{
+    float: inherit;
+    list-style-type: none; /* Elimino los estilos de lista */
+    padding: 0; 
+}
+li{
+    float: left; /* Floto los li para que se dispongan horizontalmente */
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+}
+li a{
+    padding: 25px; /* El padding añadirá separación entre los elementos */
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-style: italic;
+    font-size: 24px;;
+}
+a:hover{
+    color:rgb(20, 82, 124);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Menu Nav */
+
+/* SUBMenu Nav */
+li ul { /* El segundo nivel del menú oculto*/
+    display: none;
+}
+li:hover > ul { /* El segundo nivel del menú se muestra */
+    display: block;
+    position: absolute;
+}
+
+/* SUBMenu Nav */
+
+
+.quever_2{
+    margin-top: 8rem;
+    display:block;
+    background-image: url(../assets/cielo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: #b3ffa0; */
+    width: 100%;
+    padding-block-end: 2rem;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+
+}
+.quever_2 header {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    padding: 3rem 1rem 1rem 2rem;
+}  
+
+
+
+.main_footer{
+    background: linear-gradient(340deg, #3ea4d4, #3ee9ea);
+    background-size: 400% 400%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    height: block;
+    border: 1px solid;
+}
+.main_footer aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main_footer aside li{
+    display: inline-block;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.main_footer aside a{
+    display: block;
+}
+.iframe_footer {
+    width: 100%;
+    height: 20vh;
+    border: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    body{
+     margin:0;
+     }
+   
+ }
+
+
+@media screen and (max-width: 600px) {
+    body{
+     margin:0;
+     }
+   
+ }
+ @media screen and (max-width: 800px) {
+    body{
+     margin:0;
+     }
+   
+ }

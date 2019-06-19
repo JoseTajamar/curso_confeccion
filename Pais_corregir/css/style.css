@@ -1,8 +1,14 @@
+
 * {
     box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
     vertical-align: baseline;
-    
 }
+
 
 @font-face {
     font-family:"standorf";
@@ -337,6 +343,18 @@ p {
 }
 /* VISITAS */
 
+.gridver{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.gridver h4{
+    text-align: center;
+}
 
 /* //FOOTER */
 
@@ -390,6 +408,12 @@ p {
 /* TABLAS */
 
 
+@media screen and (max-width: 480px) {
+    body{
+     margin:0;
+     }
+   
+ }
 
 @media screen and (max-width: 600px) {
     body{
@@ -397,3 +421,10 @@ p {
      }
    
  }
+ @media screen and (max-width: 800px) {
+    body{
+     margin:0;
+     }
+   
+ }
+
