@@ -167,6 +167,7 @@ a:hover{
   }
 
   .btn {
+    margin-top: 3rem;
     margin-bottom: 4rem;
     display: inline-block;
     font-weight: 400;
