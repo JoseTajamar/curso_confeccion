@@ -37,31 +37,7 @@ function isMultiplo(m = 0, n = 0) {
     return r
  }
 
-// Espectativas
-console.log('isMultiplo(2,20) debe dar true')
-// Prueba
-console.log(isMultiplo(2,20))
-// Espectativas
-console.log('isMultiplo(2,21) debe dar false')
-// Prueba
-console.log(isMultiplo(2,21))
-// Espectativas
-console.log('isMultiplo(2,-20) debe dar true')
-// Prueba
-console.log(isMultiplo(2,-20))
-// Espectativas
-console.log('isMultiplo(2,-21) debe dar false')
-// Prueba
-console.log(isMultiplo(2,-21))
-// Espectativas
-console.log('isMultiplo(3,20) debe dar false')
-// Prueba
-console.log(isMultiplo(3,20))
-// Espectativas
-console.log('isMultiplo(3,21) debe dar true')
-// Prueba
-console.log(isMultiplo(3,21))
-
+module.exports = isMultiplo
 
 /** function extraerMultiplos
  * @description extraer de un array los multiplos de n

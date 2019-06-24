@@ -7,9 +7,9 @@
     "test": "jasmine"
   },
   "keywords": [],
-  "author": "Alejandro Cerezo",
+  "author": "Jose Kira",
   "license": "ISC",
-  "dev-dependencies": {
+  "devDependencies": {
     "jasmine": "^3.4.0"
   }
 }
