@@ -1,7 +1,6 @@
 'use strict'
 
 /* Datos 
-
 - Indefinidos: 
     - undefine
 - Primitivos
@@ -20,7 +19,6 @@
 */
 
 /* Variables
-
     - Tipo: débiles (implícitos al valor) y dinámicos
     - Ciclo de vida
         - declaración : inicialización : asignación
@@ -149,6 +147,7 @@ if (w) {}
 
 parseInt(7/3) // 2
 7%3 // 1
+9%3 //0
 
 // Operadores de asignación
 
