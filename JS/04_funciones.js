@@ -1,9 +1,8 @@
 
-/** 
+/**
  * 
- * 
- * @param {array} aDatos 
- * @returns {array}
+ * @param  {array} aDatos 
+ * @returns {number, array}
  */
 
 function calcularSC(...aDatos) {
@@ -13,17 +12,20 @@ function calcularSC(...aDatos) {
         const item = aDatos[i];
         let x = item * item
         aCuadrados.push(x)
-        r +=x
-    }    
-    return [r, aCuadrados]  
+        r += x
+    }
+    // return [r, aCuadrados]
+    return {sumaTotal: r, aCuadrados: aCuadrados}
 }
 
-let sumaTotal
+/* let sumaTotal
 let aCuadrados
-let aResultados
-sumaTotal = aResultados [0]
-aCuadrados = aResultados [1]
+let aResultados = calcularSC(1, 5, 7, 8)
+sumaTotal = aResultados[0]
+aCuadrados = aResultados[1] */
 
-[sumaTotal, aCuadrados] = calcularSC(1, 5, 7, 8)
+// let [sumaTotal, aCuadrados] = calcularSC(1, 5, 7, 8)
+let {aCuadrados, sumaTotal} = calcularSC(1, 5, 7, 8)
+
 console.log(sumaTotal)
 console.log(aCuadrados)

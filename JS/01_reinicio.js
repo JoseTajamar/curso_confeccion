@@ -1,6 +1,7 @@
 'use strict'
 
 /* Datos 
+
 - Indefinidos: 
     - undefine
 - Primitivos
@@ -19,6 +20,7 @@
 */
 
 /* Variables
+
     - Tipo: débiles (implícitos al valor) y dinámicos
     - Ciclo de vida
         - declaración : inicialización : asignación
