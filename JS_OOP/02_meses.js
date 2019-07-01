@@ -74,6 +74,7 @@ function mostrarParesMeses(id1, id2) {
 try {
     // Eleige dos entre 'es', 'ru', 'en'
     mostrarParesMeses('ruso', 'en')
+    mostrarParesMeses(idioma1, 'en')
 } catch (e) {
     console.error('Lo sentimos')
     console.error(e.message)
