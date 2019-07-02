@@ -1,3 +1,4 @@
+    
 'use strict'
 
 let version = 'ES6'
@@ -8,18 +9,15 @@ let nuevaCadena = `Nuevo en ${version}` // Template String
 
 console.log(cadena, otraCadena, nuevaCadena)
 console.log(cadena.toUpperCase())
-console.log(cadena)
+
 
 console.log(cadena.length)
-console.log(cadena[100])
+console.log(cadena[0])
 
 for (let i = 0; i < cadena.length; i++) {
     const item = cadena[i];
-    console.log(item)
-} 
+    console.log(item)   
+}
 
-let x = cadena.split('')
-console.log(x[3] + ' ' + x[4]).toUpperCase()
-
-console.log(cadena.length)
-console.log()
+let x = cadena.split(' ').join('').toUpperCase()
+console.log(x)
