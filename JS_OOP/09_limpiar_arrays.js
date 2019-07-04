@@ -1,48 +1,48 @@
 /**
- * @description: eliminar de un array los nombres que
- * empiecen por una tecla determinada del Array que recibe
- * @param {string}: letra
- * @param {array}: aNombres
- * @returns {array}
+ * @description: devuelve un array eliminando los nombres 
+ * que empiecen por una letra determinada del array que recibe
+ * @param: {string}: letra 
+ * @param: {array}: aNombres
+ * @returns {array} 
  */
-
- function limpiarArrays (letra = '', aNombres = []) {
-     const r = aNombres.slice()
-     for (let i = 0; i < aNombres.length; i++) {
-         const item = aNombres[i];
-         if (item[0].toLowerCase() == letra.toLowerCase()) {
-             aNombres.splice(i, 1)
-             i--
-         }
-     }
-     return r
+function limpiarArray(letra = '', aNombres = []) {
+    const datos = aNombres.slice()
+    for (let i = 0; i < datos.length; i++) {
+        const item = datos[i];
+        if (item[0].toLowerCase() === letra.toLowerCase()) {
+            datos.splice(i, 1)
+            i--
+        }   
+    }
+    return datos
  }
 
  let l = 'r'
- let aUsuarios = ['rosa',  'elena','raquel', 'maria']
-
- limpiarArrays(l, aUsuarios)
+ let aUsuarios = ['rosa', 'raquel', 'elena', 'renata', 'maria', 'roberto', 'ramon']
+ 
+ console.log(limpiarArray(l, aUsuarios))
  console.log(aUsuarios)
 
- //PARAMETROS Y ELEMENTALEs
+// PARÁMETROS y ELEMENTALES
 
- function algo(h) {
-     h = h * h
-     return h
- } 
- let z = 4
- algo(z)
- console.log(z)
+function algo(h) {
+    h = h * h
+    return h // 16
+}
 
-//PARAMETROS Y REFERENCIAS
+let z = 4
+algo(z)
+console.log(z)
 
-function cuadrados(a) {i
+// PARAMETROS y REFERNCIAS
+
+function cuadraros(a) {
     for (let i = 0; i < a.length; i++) {
-        a[i] = a[i] * a[i]
+        a[i] =  a[i] * a[i]
     }
     return a // [1, 4, 9]
 }
 
 let x = [1, 2, 3]
-cuadrados(x)
+cuadraros(x)
 console.log(x)
