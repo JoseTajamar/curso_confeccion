@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio JS en la web</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <h1>Programa de frases</h1>
+    </header>
+
+    <section>
+        <h2>Frecuencia cada letra de una frase </h2>
+        <button onclick="myFunction()">calcula</button>
+        <p id="demo"></p>        
+        <script>
+            var coincidencia;
+            function myFunction() {
+                var str = prompt("Introduce una cadena:", "");
+                coincidencia = prompt("Introduce el caracter a buscar:", "");
+            
+                if (str != null) {
+                alert("en "+ str + " la letra " + coincidencia + " se repite " + cuenta(str) +" veces."); 
+                }
+            }
+            function cuenta(str) {  
+            var regex = new RegExp("[^"+ coincidencia +"]","g");
+            str = str.replace(regex, "").length  
+            return str;
+            }
+        </script>        
+    </section>
+
+    <section>
+        <h2>Nº veces cada letra</h2>
+        <script>
+            function countChars(obj){
+                document.getElementById("charNum").innerHTML = obj.value.length+' letras';
+            }
+        </script>
+        <textarea name="message" onkeyup="countChars(this);"></textarea>
+        <p id="charNum">0 letras</p>
+    </section>
+
+    <section>
+        <h2>Numero de palabras</h2>
+        <script>
+            function contar(letra){
+                var texto = "abcadefaghijklmnñopqrstiuvwxyz";
+                var contar = 27;
+                var start = 27;
+            while ((start = texto.indexOf("a", start) + 1) > 0) {
+                contar++;
+            }
+            alert(contar);
+            }
+        </script>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="button" value="contar" onclick="contar('a')" />
+    </section>
+    </body>
+    </html>
+</html>
