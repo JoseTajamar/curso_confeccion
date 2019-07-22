@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS en la Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./favicon.ico">
+    <script src="./js/bootstrap.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>JS en la Web</h1>
+    </header>
+    <main>
+        <script class="chronometer">
+            var cronos;
+            var tiempo;
+             function init() {
+               cronos = setInterval(function() { timer() }, 800);
+             }
+             function timer() {
+               tiempo = parseInt(document.getElementById('time').value);
+               document.getElementById('time').value = eval(tiempo + 1);
+             }
+             function reset() {
+               tiempo = parseInt(document.getElementById('time').value);
+               document.getElementById('time').value = "0";
+             }
+             function stop() {
+               clearInterval(cronos);
+             }
+           </script>
+           <div class="buttons">
+                <input class="esmerald" type="button" value="Empezar" onclick="init()" />
+                <input class="esmerald" type="button" value="Reiniciar" onclick="reset()" />
+                <input class="esmerald" type="button" value="Parar" onclick="stop()" />
+                <input id="time" name="time" value="0" />
+           </div>
+    </main>
+    <footer>
+        <address>
+            Jose Velarde
+        </address>
+    </footer>
+</body>
+</html>
