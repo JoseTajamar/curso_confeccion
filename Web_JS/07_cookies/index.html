@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,22 +14,26 @@
         <h1>JS en la Web</h1>
     </header>
     <main>
-        <section>
-            <button id="btn-salir">Gogle</button>
-            <dialog id='dlg-cancelar'>
-                <div>
-                    <p>Nos vamos a Google</p>
-                    <div class="out-wrapper">
-                        <output id="dlg-time"></output>
-                    </div>
-                    <div>
-                        <button id='btn-cancelar'>Cancelar</button>   
-                    </div>          
-                </div>
-            </dialog>            
-        </section>
-        <section class="wrapper-cronos">
-        </section>
+        <div class="flex">
+            <p>Iniciar / borrar el contador de visitas</p>
+            <div>
+                <button>Iniciar</button>
+                <button>Eliminar</button>
+            </div>
+        </div>
+        <div class="flex">
+            <p>Mostrar número de visitas a la página</p>
+            <div>
+                <button>Mostrar</button>
+                <output></output>
+            </div>
+        </div>
+        <div class="flex">
+            <p>Recargar la página</p>
+            <div>
+                <button>Recargar</button>
+            </div>
+        </div>
     </main>
     <footer>
         <address>

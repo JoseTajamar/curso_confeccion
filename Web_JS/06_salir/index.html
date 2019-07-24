@@ -14,20 +14,31 @@
         <h1>JS en la Web</h1>
     </header>
     <main>
-        <button id="btn-salir">Gogle</button>
-        <dialog id='dlg-cancelar'>
-            <div>
-                <p>Nos vamos a Google</p>
-                <output></output>
+        <section>
+            <button id="btn-salir">Gogle</button>
+            <dialog id='dlg-cancelar'>
                 <div>
-                    <button id='btn-cancelar'>Cancelar</button>   
-                </div>          
-            </div>
-        </dialog>
+                    <p>Nos vamos a Google</p>
+                    <div class="out-wrapper">
+                        <output id="dlg-time"></output>
+                    </div>
+                    <div>
+                        <button id='btn-cancelar'>Cancelar</button>   
+                    </div>          
+                </div>
+            </dialog>            
+        </section>
+        <section class='players'>
+            <label for="in-player">Jugador</label>
+            <input type="text" name="in-player" id="in-player">
+            <button id="btn-inscribir">Inscribir</button>
+        </section>
+        <section class="wrapper-cronos">
+        </section>
     </main>
     <footer>
         <address>
-            Jose Velarde
+            Alejandro Cerezo
         </address>
     </footer>
 </body>
