@@ -31,7 +31,6 @@ export function app() {
                 location.reload()
                 break;
             case 'Mostrar':
-                
                 output.value = numVisitas
                 break;
             case 'Recargar':
