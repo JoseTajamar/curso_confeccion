@@ -19,19 +19,21 @@ main {
     min-height: 60vh;
 }
 
+.oculto {
+    display: none;
+}
+
 .btn {
     cursor: pointer;
-}
-
-.confirmacion {
     color: brown;
-    background-color: bisque;
-    text-align: center;
+    font-family: cursive;
 }
 
-li {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem
+.super-boton{
+    padding: 2rem;
+    cursor: pointer;
+    color: brown;
+    font-family: cursive;
 }
 
 footer {
