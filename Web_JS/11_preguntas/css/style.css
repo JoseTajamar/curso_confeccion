@@ -29,11 +29,21 @@ main {
     font-family: cursive;
 }
 
-.super-boton{
-    padding: 2rem;
+.super-boton {
+    padding: 1rem 2rem;
+    width: 20%;
+    text-align: center;
     cursor: pointer;
     color: brown;
+    border: 1px solid;
+    border-radius: 10px 10px;
     font-family: cursive;
+    background-color: darksalmon
+}
+
+.hover-boton {
+    transform: scale(1.2);
+    background-color: coral;
 }
 
 footer {
