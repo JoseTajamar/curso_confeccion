@@ -20,7 +20,14 @@
       justify-content: center;
       align-items: center;
   }
-  
+
+p{
+  font-family: 'Chilanka', cursive;
+  text-align: center;
+  text-decoration: underline rgb(46, 56, 70);
+  padding-top: 2rem;
+}
+
     h2{
       font-family: 'Chilanka', cursive;
       text-align: center;
